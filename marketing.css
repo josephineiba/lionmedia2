@@ -1,20 +1,10 @@
-/* [Farvekoder]
-
-Background: #E9E5E2 (beige)
-Content: #1e1e1e (light black)
-h1,h2,h3: #423425 (Brun-grå)
-h4:  #365F73 (Blå-grå)
-Header, footer background: #423425 (brun-grå)
-
-a (standard):   #E9E5E2
-a reference:    #365F73 (blå)
-
-
+/* ------------------------------------------------------------------------
 [Typografi]
 
 Overskrifter:	'DM Serif Display', serif;
 Brødtekst:		'Libre Caslon Text', serif;
 Footer tekst:	'Libre Caslon Text', serif;
+------------------------------------------------------------------------ */
 
 /*Generel styling*/
  
@@ -33,6 +23,20 @@ header {
 	height: 100vh;
 	max-width: auto;
 }
+
+.lionmedia{			/* tekst LionMedia navn */
+	font-size: 50px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: white;
+	margin-left: -200px;
+}
+
+.menu-top img {
+    width: 100px; 
+    height: auto; 
+    margin-top: -20px;
+  }
 
 .menu-top{
  	display: flex;
@@ -62,35 +66,45 @@ header {
 	margin-top: 22px;
 }
 
-.header-tekst{
-    display: grid;
-	grid-template-columns: 45% 10% 45%;
-}
-
-.header1{
-	grid-column-start: 1;
-	margin-left: 50px;
-	font-size: 90px;
+/* header tekst bokse + overskrifter */
+.rullende-tekst{ 		
+    font-size: 20vh;
 	font-family: "DM Serif Display", serif;
 	color: white;
-    text-align: left;
-    grid-column-start: 1;
-    margin-left: 60px;
-    margin-top: 150px;
+    text-align: center;
+	margin-bottom: 100px;
 }
 
-.header2 {
-	grid-column-start: 3;
-	font-size: 25px;
-    font-family: 'Libre Caslon Text', serif;	
-    line-height: 1.5;
-    color: white;
-    text-align: left;
-    grid-column-start: 3;
-    margin-left: -40px;
-    margin-right: 60px;
-    margin-top: 150px;
+.kolonner-header{
+	display: flex
 }
+
+.kolonner-header section{
+	width: 50%;
+	margin-left: 10px;
+}
+
+.kolonner-header aside{
+	width: 50%;
+	margin-left: 100px;
+}
+
+h1{
+	font-size: 90px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: white;
+	margin-top: 110px;
+}
+
+.ny-p{
+    font-size: 30px;
+    font-family: "Libre Calson Text", serif;	
+    text-align: left;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 80px;
+  }
 
 /* main indhold */
 .first-line {
@@ -110,19 +124,6 @@ header {
 }
 
 /*tekst styling*/
-h1{			/* LionMedia navn */
-	font-size: 50px;
-	font-family: "DM Serif Display", serif;
-	text-align: left;
-	color: white;
-}
-
-h2{ 		/* Hoved overskrift */
-    font-size: 25vh;
-	font-family: "DM Serif Display", serif;
-	color: white;
-    text-align: center;
-}
 
 h3 {		/* Afsnit overskrift */
 	font-size: 80px;

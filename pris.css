@@ -30,15 +30,12 @@ img{
     margin-top: -20px;
   }
 
-  .menu-top p {
-    margin-left: -330px;
-  }
-
   .lionmedia {
 	font-size: 50px;
 	font-family: "DM Serif Display", serif;
 	text-align: left;
 	color: white;
+    margin-left: -300px;
     }
   
 .menu-hvid {
