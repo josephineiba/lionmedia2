@@ -11,6 +11,10 @@ header {
 	max-width: auto;
 }
 
+img{
+    max-width: 100%;
+}
+
 /*Menu-top*/
 .menu-top {
     display: flex;
@@ -26,9 +30,16 @@ header {
     margin-top: -20px;
   }
 
-  .menu-top h1 {
+  .menu-top p {
     margin-left: -330px;
   }
+
+  .lionmedia {
+	font-size: 50px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: white;
+    }
   
 .menu-hvid {
 	width: 45vw;
@@ -50,6 +61,241 @@ header {
 	margin-top: 22px;
 }
 
+/*Om os præsentation*/
+
+.kolonne {
+    display: flex;
+  }
+  
+  .kolonne article {
+      height: auto; 
+      padding: 1em;
+      width: 50%;
+      margin: 0 0 0 1em; 
+    border-radius: 8px;
+  }
+  
+  .kolonne aside {
+      height: auto;
+      padding: 1em;
+      width: 50%;
+      margin: 0 1em 0 1em;
+    border-radius: 8px;
+  }
+
+  /*tekst og overskrifter*/
+
+.rullende-tekst{
+    font-size: 20vh;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: white;
+    margin-top: 20px;
+}
+
+h1{
+	font-size: 90px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: white;
+  margin-top: 110px;
+}
+
+.ny-p{
+    font-size: 30px;
+    font-family: "Libre Calson Text", serif;	
+    text-align: left;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 80px;
+  }
+
+/* to farvet overskrift */
+.first-line {
+    font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color:#ff1e00; 
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+.second-line {
+    font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	color:#2b2b2b; 
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 450px;
+}
+
+/*kontakt tekst*/
+.info-tekst{
+    font-size: 30px;
+    font-family: "Libre Calson Text", serif;
+    color:#2b2b2b; 
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+/*Kontaktformular*/
+
+.kontaktform {
+	border-radius: 5px;
+	padding: 1.3em;
+	width: 50%;
+	margin: 0 auto; /*Centrerer elementet på siden*/
+	margin-bottom: 80px;
+  }
+  
+.container{
+    display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.container article{
+    grid-column-start: 1;
+    margin-bottom: 20px;
+}
+
+.container aside {
+    grid-column-start: 2;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=firma], textarea{
+    padding: 1em;
+    border: 1px solid #333232;
+    border-radius: 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 90%;
+    background-color: #EDECEC;
+}
+
+.visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*check box kategorier*/
+.marketing{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #EDECEC;
+    font-size: 60px;
+    color: #333232;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.webdesign{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #680501;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.digital{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333232;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.social{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E6D4C3;
+    font-size: 60px;
+    color: #333232;
+    text-align: center;
+    padding-top: 15px;
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+	border-radius: 20px;
+    background-color: #EDECEC
+}
+
+.checkbox{
+    border-style: none;
+    width: 25%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+
+.checkbox-kolonne1{
+    grid-column-start: 1;
+}
+
+.checkbox-kolonne2{
+    grid-column-start: 2;
+}
+
+#check{
+    margin-bottom: 20px;
+}
+
+#check:checked, #tel:checked, #mail:checked{
+    accent-color: #ff1e00;
+}
+
+legend{
+    font-size: 20px;
+}
+
+.kontaktes-valg{
+    border-style: none;
+    font-family: "DM Serif Display", serif;
+    color: #000;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 1.5em;
+	border: none;
+	border-radius: 100px;
+	width: 35%;
+	font-size: 25px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+button:hover{
+background-color: #333232;
+}
 
 /*footer*/
 footer {

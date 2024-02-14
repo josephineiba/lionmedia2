@@ -4,77 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Få en pris</title>
+    <script src="https://kit.fontawesome.com/8eff645880.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="pris.css">
 </head>
 <body>
     <header>
-            <!-- menu linje --> 
-                <div class="menu-top">
-                    <img src="img/logooverskrift.png" alt="Lionmedia logo orange og hvid">
-                    <h1>LionMedia</h1>
-                        <div class="menu-hvid">
-                            <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #333232;"></i>
-                            <i class="fa-solid fa-bars fa-2xl" style="color: #333232;"></i>
-                        </div>
-                </div>
+             <!-- menu linje -->
+             <div class="menu-top">
+                <img src="img/logooverskrift.png" alt="Lionmedia logo orange og hvid">
+                <p class="lionmedia">LionMedia</p>
+                    <div class="menu-hvid">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #333232;"></i>
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #333232;"></i>
+                    </div>
+            </div>
+        
+        <!--Overskrift og præsentation--> 
+        <p class="rullende-tekst">Alt under ét tag</p>
+        
+        <section class="kolonne"> <!--section skaber et link mellem article og aside. flex-class gør det muligt at sætte dem op ved siden af hinanden-->
+            <article>
+                <h1>Få en pris</h1>
+            </article>
+            
+            <aside>
+                <p class="ny-p">Hos <span style="color: #ff1e00;">LionMedia</span> tager vi altid en dialog med jer, så vi kan sammensætte den perfekte pakke til jeres firma.<br><br>Ønsker, krav og budget til hjemmesiden fastsættes inden prisen gives.</p>
+            </aside>
+        </section>
     </header>
-    <h2>Alt under ét tag </h2>
-        
-    <section class="kolonne"> <!--section skaber et link mellem article og aside. flex-class gør det muligt at sætte dem op ved siden af hinanden-->
-        <article>
-            <p>Få</p>
-        </article>
-        
-        <aside>
-            <p class="ny-p">Velkommen til LionMedia, hvor vi er dedikerede til at støtte og hjælpe andre virksomheder og iværksættere! <br><br> Vores dynamiske team består af unge og engagerede fagfolk, der konstant holder sig opdaterede på de nyeste trends og tendenser!</p>
-        </aside>
-    </section>
-<main></main>
 
-
-
-
-
-
-<footer>
-    <img src="img/logo-aflang.png" alt="logo">
-    <div class="kolonner">
-        <div class="kolonne1"> 
-            <a href="tel:12345678">+(45) 12 34 56 78</a>
-            <br>
-            <a href="mailto:lionmediaaps@gmail.com">lionmediaaps@gmail.com</a>
-            <p>CVR: 44019574</p>
-            <br>
-            <!--Link til TikTok-->
-            <img class="tiktok" src="img/tiktok.png" alt="tiktok logo">
-            <a href="https://www.instagram.com/lionmediaaps/">
-            <img class="insta" src="img/instagram.png" alt="instagram logo">
-            </a>
+    <!-- hovedindhold -->
+    <main> 
+        <div class="overskrift-main">
+            <h2 class="first-line">Få et uforpligtende</h2>
+            <h2 class="second-line">TILBUD</h2>
         </div>
 
-        <div class="kolonne2"> 
+        <p class="info-tekst">Ring idag på +(45) 12 34 56 78 eller udfyld formularen,
+            så sender vi jer en mail inden for 3-5 hverdage.</p>
+
+    <!--Kontaktformular-->
+    <div class="kontaktform">
+    <form>
+        <section class="container">
+            <article>
+            <label for="navn" class="visually-hidden">Navn</label>
+            <input id="navn" type="text" placeholder="Navn" required>
+
+            <label for="firma" class="visually-hidden">Firma</label>
+            <input id="firma" type="text" placeholder="Firma" required>
+
+            <label for="mail" class="visually-hidden">E-mail</label>
+            <input id="mail" type="email" placeholder="E-mail" required>
+
+            <label for="tel" class="visually-hidden">Telefon</label>
+            <input id="tel" type="tel" placeholder="Telefon" required>
+            </article>  
+            
+            <aside>
+                <!-- checkbox-->
+            <fieldset class="checkbox">
+                
+             <section class="checkbox-kolonne1">
+                <div class="marketing">M</div>
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">Marketing</label>
+                </div>
+
+                <div class="social">S</div>
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">Sociale medier</label>
+                </div>
+            </section>
+
+            <aside class="checkbox-kolonne2">
+                <div class="webdesign">W</div>
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">Webdesign</label>
+                </div>
+
+                <div class="digital">D</div>
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">Digital strategi</label>
+                </div>
+            </aside>
+                </fieldset>
+            </aside>
+        </section>
+
+        <textarea id="besked" cols="80" rows="15" placeholder="Din forespørgsel..." required></textarea> <!--cols og rows definere størrelses på tekstboksen-->
+
+        <fieldset class="kontaktes-valg">
+            <legend>Hvor vil I kontaktes?</legend>
+         
+            <input id="tel" type="radio" value="tel" name="kontaktes">
+            <label for="tel">Telefon</label>
+            
+            <input id="mail" type="radio" value="mail" name="kontaktes">
+            <label for="mail">E-Mail</label>
+        </fieldset>
+
+        <button type="submit">SEND</button>
+
+    </form>
+</div>
+     </main>
+
+     <footer>
+        <img src="img/logo-aflang.png" alt="logo">
+        <div class="kolonner">
+            <div class="kolonne1"> 
+                <a href="tel:12345678">+(45) 12 34 56 78</a>
+                <br>
+                <a href="mailto:lionmediaaps@gmail.com">lionmediaaps@gmail.com</a>
+                <p>CVR: 44019574</p>
+                <br>
+                <!--Link til TikTok-->
+                <img class="tiktok" src="img/tiktok.png" alt="tiktok logo">
+                <a href="https://www.instagram.com/lionmediaaps/">
+                <img class="insta" src="img/instagram.png" alt="instagram logo">
+                </a>
+            </div>
+    
+            <div class="kolonne2"> 
+                <nav>
+                    <li><a href="marketing.html">Marketing</a></li>
+                    <li><a href="#">Sociale Medier</a></li>
+                    <li><a href="#">Webdesign</a></li>
+                    <li><a href="digitalstrategi.html">Digital Strategi</a></li>
+                </nav>
+            </div>
+    
+            <div class="kolonne3"> 
             <nav>
-                <li><a href="marketing.html">Marketing</a></li>
-                <li><a href="#">Sociale Medier</a></li>
-                <li><a href="#">Webdesign</a></li>
-                <li><a href="digitalstrategi.html">Digital Strategi</a></li>
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">Få en pris</a></li>
+                <li><a href="omos.html">Om Lionmedia</a></li>
             </nav>
+            </div>        
         </div>
-
-        <div class="kolonne3"> 
-        <nav>
-            <li><a href="#">Cases</a></li>
-            <li><a href="#">Få en pris</a></li>
-            <li><a href="omos.html">Om Lionmedia</a></li>
-        </nav>
-        </div>        
-    </div>
-    <hr>
-    <p class="info">LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</p>
-    <br>
-    <br>
-</footer>
-
+        <hr>
+        <p class="info">LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</p>
+        <br>
+        <br>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>    
 
 </body>
-</html>
+</html> 
