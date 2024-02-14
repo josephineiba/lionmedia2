@@ -1,0 +1,878 @@
+/*Generel styling*/
+ 
+* { /*alt på siden bliver påvirket*/
+	box-sizing: border-box; /*Padding og border inkluderes i bredde og højde*/
+	margin: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*indhold header styling*/
+header {
+	background-color: #2b2b2b;
+	height: 100vh;
+	max-width: auto;
+}
+
+.menu-top{ 
+ 	display: flex;
+	justify-content: space-between;
+	 padding-top: 40px;
+	 padding-left: 60px;
+	 padding-right: 60px;
+}
+
+.menu-hvid {
+	width: 45vw;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #fff;
+}
+
+.fa-bars{
+	display: flex;
+	justify-content: right;
+	margin-right: 20px;
+	color: #333232;
+}
+
+.fa-magnifying-glass{
+	display: flex;
+	justify-content: left;
+	margin-left: 20px;
+	margin-top: 22px;
+	color: #333232;
+}
+
+.menu-telefon{
+	display: none;
+}
+
+.videocontainer {
+	display: flex;
+	justify-content: space-between; 
+}
+
+.video {
+	width: 50%; 
+	height: auto;
+}
+
+.frontimg {
+	width: 50%;
+	height: auto;
+}
+
+/*burger menu - slide in*/
+
+.dropdown-menu {
+	background-color: #edecec;
+	width: 50vw;
+	height: 100vh;
+	position: absolute;
+}
+
+.dropdown-menu ul {
+	list-style: none;
+	display: flex;
+}
+
+.dropdown-menu li a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "DM Serif Display", serif;
+	color: #ff1e00;
+	text-align: left;
+}
+
+/*services forside*/
+
+.service-overskrift{
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #333232; 
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+.bokscontainer{
+	display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.boks1, .boks2, .boks3, .boks4 {
+	transition: 1s;
+}
+
+.boks1:hover, .boks2:hover, .boks3:hover, .boks4:hover{
+	transform:scale(1.1);
+	z-index: 2;
+}
+
+.boks1{
+    background-color: #EDECEC;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.boks1 h3, .boks2 h3{ 
+text-align: center;
+padding-top: 20px;
+color: #000;
+font-size: 35px;
+font-family: "DM Serif Display", serif;
+}
+
+.boks1 hr, .boks2 hr{
+    border: 1px solid #000;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 20px;
+}
+
+.boks1 p, .boks2 p{
+text-align: center;
+font-size: 20px;
+line-height: 2;
+font-family: 'Libre Caslon Text', serif;
+font-size: 20px;
+}
+
+.service-knap{
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 0.5em;
+    padding-top: 2.5px;
+	border: none;
+	border-radius: 100px;
+    width: 50%;
+    height: 10%;
+	font-size: 25px;
+	font-weight: 600;
+	cursor: pointer;
+    margin-left: 25%;
+	margin-right: 25%;
+    margin-top: 40px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+.service-knap button:hover{
+    background-color: #333232;
+    }
+
+.boks2{
+    background-color: #E6D4C3;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.boks3{
+    background-color: #680501;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.boks3 h3, .boks4 h3{ 
+text-align: center;
+color: #fff;
+padding-top: 20px;
+font-size: 35px;
+font-family: "DM Serif Display", serif;
+}
+
+.boks3 hr, .boks4 hr{
+    border: 1px solid #fff;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 20px;
+}
+
+.boks3 p, .boks4 p{
+text-align: center;
+font-size: 20px;
+line-height: 2;
+color: #fff;
+font-family: 'Libre Caslon Text', serif;
+font-size: 20px;
+}
+
+.boks4{
+    background-color: #333232;
+	color: #fff;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.pris-tekst{
+	font-size: 40px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #333232; 
+	margin-top: 20px;
+}
+
+
+.knap-pris button {
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 0.5em;
+	border: none;
+	border-radius: 100px;
+	width: 15%;
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 40px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+.knap-pris {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.knap-container{
+	width: 10%;
+	font-size: 20px;
+	margin-left: 70px;
+}
+
+
+/*tekst og overskrifter*/
+h1{
+	font-size: 50px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: white;
+}
+
+h3{
+	font-size: 40px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #333232; 
+	margin-top: 20px;
+}
+
+h4{
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #fff; 
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+/*cases box*/
+.cases-tekst{
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #fff; 
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.cases-billeder{
+	display: flex;
+    justify-content: space-evenly;
+	padding-left: 160px;
+	padding-bottom: 70px;
+}
+
+.case-img{
+	width: 70%;
+	height: auto;
+}
+
+.cases-box {
+	background-color: #333232;
+	height: auto;
+	max-width: auto;
+}
+	
+/*Kontaktform*/
+
+.first-line {
+    color: #ff1e00;
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	display: flex;
+   justify-content: left;
+   margin-left: 250px;
+}
+
+.second-line {
+    color: #333232;
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+	margin-bottom: 10px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.left{
+	grid-column-start: 1;
+}
+
+.right{
+	grid-column-start: 2;
+}
+
+.cirkel-container{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.cirkel{
+	width: 80px;
+	height: 80px;
+	background-color: #ff1e00;
+	border-radius: 50%;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.kontaktform {
+	border-radius: 5px;
+	padding: 1.3em;
+	width: 50%;
+	margin: 0 auto; /*Centrerer elementet på siden*/
+	margin-bottom: 80px;
+	margin-top: 50px;
+  }
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+	width: 90%;
+	padding: 1em;
+	border: 1px solid #000;
+    background-color: #EDECEC;
+	border-radius: 50px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+textarea {
+    display: flex;
+    justify-content: right;
+	border-radius: 20px;
+}
+
+button {
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 1.5em;
+	border: none;
+	border-radius: 100px;
+	width: 25%;
+	font-size: 25px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+button:hover{
+background-color: #333232;
+}
+
+.visually-hidden{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*footer*/
+footer {
+	background-color: #333232;
+	height: auto;
+	width: auto;
+} 
+
+footer img{
+	max-width: 15%;
+	height: auto;
+	padding: 20px;
+}
+
+.kolonner{
+	display: grid;
+	grid-template-columns: 30% 5% 30% 5% 30%;
+	padding-left: 20px;
+}
+
+.kolonne1{
+	grid-column-start: 1;
+	margin-top: 30px;
+}
+
+.kolonne1 p{
+	line-height: 1;
+	text-align: left;
+	font-size: 23px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.kolonne1 a {
+	font-size: 23px;
+	font-family: "DM Serif Display", serif;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.kolonne2 nav li, .kolonne3 nav li{
+	text-align: left;
+	margin-right: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #fff;
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.kolonne2 a, .kolonne3 a{
+	color: #fff;
+	line-height: 0.3;
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.kolonne2{
+	grid-column-start: 3;
+}
+
+.kolonne3{
+	grid-column-start: 5;
+}
+
+hr{
+	border: 1px solid #fff;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.info{
+	font-size: 23px;
+	font-family: "DM Serif Display", serif;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.kolonne1 img{
+	max-width: 25%;
+	height: auto;
+	margin-left: -20px;
+}
+
+/*Responsiv skal tilpasses!*/
+
+/*mobil*/
+@media only screen and (max-width: 600px){
+	main{
+		width: 100%;
+	}
+	
+	form {
+		display: flex;
+	}	
+
+	/*Header*/
+	
+	header{
+		height: auto;
+	}
+	
+	header h1{
+		font-size: 40px;
+	}
+
+	.menu-top{
+		display: flex;
+		justify-content: space-between;
+	 	padding-top: 20px;
+	 	padding-left: 20px;
+	 	padding-right: 10px;
+	}
+
+	.menu-hvid{
+		background-color: #2b2b2b;
+		width: 25vw;
+	}
+
+	.fa-bars{
+		color: #fff;
+	}
+
+	.fa-magnifying-glass{
+		color: #fff;
+	}
+
+	.videocontainer {
+		display: grid;
+		grid-template-rows: 50% 50%;
+	}
+	
+	.video {
+		width: 90%; 
+		height: auto;
+		grid-template-rows: 2;
+		margin-left: 43px;
+		margin-top: -50px;
+	}
+	
+	.frontimg {
+		width: 100%;
+		height: auto;
+		grid-template-rows: 1;
+		margin-top: -75px;
+	}
+
+/*services*/
+
+	.bokscontainer {
+		display: grid;
+		grid-template-rows: 25% 25% 25% 25%;
+		margin-left: 20px;
+		margin-right: 20px;
+	  }
+
+	.boks1, .boks2, .boks3, .boks4 {
+		width: 80vw;
+		height: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.service-knap{
+		margin-top: 45px;
+	}
+
+	.knap-container{
+		display: none;
+	}
+
+	h2{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 55px;
+	}
+
+	.knap-pris {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.knap-pris button {
+		background-color: #ff1e00;
+		color: #fff;
+		font-family: "DM Serif Display", serif;
+		padding: 0.5em 0.5em;
+		border: none;
+		border-radius: 100px;
+		width: 30%;
+		font-size: 25px;
+		cursor: pointer;
+		margin-top: 40px;
+		box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+	}
+
+	/*cases*/
+
+	h4{
+		margin-top: -5px;
+	}
+
+	.case-img{
+		width: 100%;
+		height: auto;
+	}
+
+	.cases-billeder{
+		display: flex;
+		justify-content: space-evenly;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 70px;
+	}
+
+	/*kontakt skema*/
+	
+	.first-line {
+		color: #ff1e00;
+		display: flex;
+	   justify-content: left;
+	   margin-left: -100px;
+	}
+	
+	.second-line {
+		color: #333232;
+		display: flex;
+		justify-content: right;
+		margin-right: -100px;
+	}
+
+	form {
+		display: grid;
+		grid-template-rows: 50% 50%;
+	}
+	
+	.left{
+		grid-row-start: 1;
+	} 
+	
+	.right{
+		grid-row-start: 2;
+	}
+
+	button{
+		width: 50%;
+	}
+
+	
+
+/*Footer bredde 100%*/
+
+footer{
+	height: auto;
+}
+
+footer img{
+	max-width: 50%;
+	height: auto;
+	margin-left: 25vw;
+}
+
+.kolonner{
+	display: flex;
+	flex-direction: column;
+}
+
+.kolonne1{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+
+.kolonne2{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.kolonne3{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.insta{
+	max-width: 20%;
+}
+.tiktok{
+	max-width: 20%;
+}
+
+.kolonne1 p{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+}
+
+/*ipad + op til 13 tommer computerskærm*/
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+	main{
+		width: 100%;
+	}
+	
+	form {
+		display: flex;
+	}	
+
+	/*Header*/
+	
+	header{
+		height: auto;
+	}
+	
+	header h1{
+		font-size: 45px;
+	}
+
+	.menu-top{
+		display: flex;
+		justify-content: space-between;
+	 	padding-top: 20px;
+	 	padding-left: 20px;
+	 	padding-right: 10px;
+	}
+
+	.menu-hvid{
+		background-color: #2b2b2b;
+		width: 18vw;
+	}
+
+	.fa-bars{
+		color: #fff;
+	}
+
+	.fa-magnifying-glass{
+		color: #fff;
+	}
+	
+/*services*/
+
+.bokscontainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-left: 20px;
+	margin-right: 20px;
+  }
+
+.boks1, .boks2, .boks3, .boks4 {
+	width: 45vw;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.service-knap{
+	margin-top: 45px;
+}
+
+	.knap-container{
+		display: none;
+	}
+
+	h2{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 55px;
+	}
+
+	.knap-pris {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.knap-pris button {
+		background-color: #ff1e00;
+		color: #fff;
+		font-family: "DM Serif Display", serif;
+		padding: 0.5em 0.5em;
+		border: none;
+		border-radius: 100px;
+		width: 30%;
+		font-size: 25px;
+		cursor: pointer;
+		margin-top: 40px;
+		box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+	}
+
+/*cases*/
+
+	h4{
+		margin-top: -5px;
+	}
+
+	.case-img{
+		width: 100%;
+		height: auto;
+	}
+
+	.cases-billeder{
+		display: flex;
+		justify-content: space-evenly;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 70px;
+	}
+
+/*kontakt skema*/
+	
+	.first-line {
+		color: #ff1e00;
+		display: flex;
+	   justify-content: left;
+	   margin-left: -70px;
+	}
+	
+	.second-line {
+		color: #333232;
+		display: flex;
+		justify-content: right;
+		margin-right: -70px;
+	}
+
+	form {
+		display: grid;
+		grid-template-rows: 50% 50%;
+	}
+	
+	.left{
+		grid-row-start: 1;
+	} 
+	
+	.right{
+		grid-row-start: 2;
+	}
+
+	button{
+		width: 50%;
+	}
+
+/*Footer*/
+
+footer{
+	height: auto;
+}
+
+footer img{
+	max-width: 50%;
+	height: auto;
+	margin-left: 25vw;
+}
+
+footer p{
+	font-size: 17px;
+}
+
+}

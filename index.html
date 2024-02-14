@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktform LionMedia</title>
+    <script src="https://kit.fontawesome.com/8eff645880.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+<nav class="dropdown-menu">
+    <ul>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="#">Sociale medier</a></li>
+        <li><a href="#">Webdesign</a></li>
+        <li><a href="#">Digital strategi</a></li>
+    </ul>
+</nav>
+<header>
+<!-- menu linje -->
+    <div class="menu-top">
+        <h1>LionMedia</h1>
+            <div class="menu-hvid">
+                <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+    </div>
+
+<!-- animeret indhold i header -->
+    <div class="videocontainer">
+        <img class="frontimg" src="img/logo-rund.png" alt="Logo der viser en hvid løve med orange baggrund">
+        <video class="video" autoplay loop muted src="animation/lionmediafront2.mp4" frameborder="0"></iframe>
+    </div>
+   
+</header>
+
+<main>
+ <!--Hovedindhold--> 
+
+    <!--Dette tilbyder vi - bokse med tekst --> 
+    <h2 class="service-overskrift">Dette tilbyder vi</h2>
+    <div class="bokscontainer">
+        <div class="boks1">
+            <h3>Marketing</h3>
+            <hr>
+            <p>Marketing strategi</p>
+            <p>SEO</p>
+            <p>Google ads</p>
+            <p>E-mail marketing</p>
+            <button class="service-knap">Læs mere</button>
+        </div>
+    
+        <div class="boks2">
+            <h3>Sociale medier</h3>
+            <hr>
+            <p>Content creation</p>
+            <p>Strategi</p>
+            <p>Annoncer</p>
+            <p>Analyser</p>
+            <p></p>
+            <button class="service-knap">Læs mere</button>
+        </div>
+    
+        <div class="boks3">
+            <h3>Webdesign</h3>
+            <hr>
+            <p>Visuel identitet</p>
+            <p>Responsivt design</p>
+            <p>Designprincipper</p>
+            <p>webtilgængelighed</p>
+            <button class="service-knap">Læs mere</button>
+        </div>
+    
+        <div class="boks4">
+            <h3>Digital strategi</h3>
+            <hr>
+            <p>Brandanalyse</p>
+            <p>Kommunikation</p>
+            <p>Platforme</p>
+            <p>Målgruppeanalyse</p>
+            <button class="service-knap">Læs mere</button>
+        </div>
+    </div>
+        <br>
+        <p class="pris-tekst">Skab din helt personlige pakke her</p>
+        <div class="knap-pris">
+        <button><a href="#"></a>Få en pris</button>
+        </div> 
+    <br>
+    <br>
+
+    <!-- tidligere cases -->
+    <div class="cases-box">
+        <br>
+        <h2 class="cases-tekst">Cases</h2>
+        <div class="cases-billeder">
+            <div class="cases" data-aos="slide-left" data-aos-duration="1000"  data-aos-easing="ease-in-out"><img class="case-img" src="img/casegreywolf.png" alt="grey wolf"></div>
+            <div class="cases" data-aos="slide-left" data-aos-duration="1000"  data-aos-easing="ease-in-out"><img class="case-img" src="img/casehard.png" alt="hard skills"></div>
+            <div class="cases" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out"><img class="case-img" src="img/caseweb.png" alt="webtilgængelighed"></div>
+        </div>
+    </div>
+    <br>
+
+     <!--Kontaktform --> 
+    <div class="kontaktform">
+        <h2 class="first-line">Har du</h2>
+        <h2 class="second-line">Spørgsmål?</h2>
+       
+     <form>
+        <div class="container">
+            <div class="left">
+            <label for="navn" class="visually-hidden">Navn</label>
+            <input id="navn" type="text" placeholder="Navn" required>
+
+            <label for="mail" class="visually-hidden">E-mail</label>
+            <input id="mail" type="email" placeholder="E-mail" required>
+
+            <label for="tel" class="visually-hidden">Telefon</label>
+            <input id="tel" type="tel" placeholder="Telefon" required>
+            </div>
+
+            <div class="right">
+                <textarea id="besked" cols="10" rows="10" placeholder="Din forespørgsel..." required></textarea> <!--cols og rows definere størrelses på tekstboksen-->
+            </div>
+        </div>
+
+        <div class="cirkel-container">
+            <div class="cirkel"><img src="img/anne1.png" alt="billede af Anne"></div>
+            <div class="cirkel"><img src="img/ditte.png" alt="billede af Ditte"></div>
+            <div class="cirkel"><img src="img/josephine.png" alt="billede af Josephine"></div>
+            <div class="cirkel"><img src="img/nicoline.png" alt="billede af Nicoline"></div>
+        </div>
+
+        <button type="submit">SEND</button>
+
+       </form>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <img src="img/logo-aflang.png" alt="logo">
+    <div class="kolonner">
+        <div class="kolonne1"> 
+            <a href="tel:12345678">+(45) 12 34 56 78</a>
+            <br>
+            <a href="mailto:lionmediaaps@gmail.com">lionmediaaps@gmail.com</a>
+            <p>CVR: 44019574</p>
+            <br>
+            <!--Link til TikTok-->
+            <img class="tiktok" src="img/tiktok.png" alt="tiktok logo">
+            <a href="https://www.instagram.com/lionmediaaps/">
+            <img class="insta" src="img/instagram.png" alt="instagram logo">
+            </a>
+        </div>
+
+        <div class="kolonne2"> 
+            <nav>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="#">Sociale Medier</a></li>
+                <li><a href="#">Webdesign</a></li>
+                <li><a href="digitalstrategi.html">Digital Strategi</a></li>
+            </nav>
+        </div>
+
+        <div class="kolonne3"> 
+        <nav>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Få en pris</a></li>
+            <li><a href="omos.html">Om Lionmedia</a></li>
+        </nav>
+        </div>        
+    </div>
+    <hr>
+    <p class="info">LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</p>
+    <br>
+    <br>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
