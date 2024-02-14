@@ -49,3 +49,93 @@ header {
 	margin-left: 20px;
 	margin-top: 22px;
 }
+
+
+/*footer*/
+footer {
+	background-color: #333232;
+	height: auto;
+	width: auto;
+} 
+
+footer img{
+	max-width: 15%;
+	height: auto;
+	padding: 20px;
+}
+
+.kolonner{
+	display: grid;
+	grid-template-columns: 30% 5% 30% 5% 30%;
+	padding-left: 20px;
+}
+
+.kolonne1{
+	grid-column-start: 1;
+	margin-top: 30px;
+}
+
+.kolonne1 p{
+	line-height: 1;
+	text-align: left;
+	font-size: 23px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.kolonne1 a {
+	font-size: 23px;
+	font-family: "DM Serif Display", serif;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.kolonne2 nav li, .kolonne3 nav li{
+	text-align: left;
+	margin-right: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #fff;
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.kolonne2 a, .kolonne3 a{
+	color: #fff;
+	line-height: 0.3;
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.kolonne2{
+	grid-column-start: 3;
+}
+
+.kolonne3{
+	grid-column-start: 5;
+}
+
+hr{
+	border: 1px solid #fff;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.info{
+	font-size: 23px;
+	font-family: "DM Serif Display", serif;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.kolonne1 img{
+	max-width: 25%;
+	height: auto;
+	margin-left: -20px;
+}
