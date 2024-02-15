@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="marketing.css">
+<link rel="stylesheet" href="kategorier.css">
 </head>
 <body> 
 <!-- header -->
@@ -19,8 +19,8 @@
         <img src="img/logooverskrift.png">
         <p class="lionmedia">LionMedia<p>
             <div class="menu-hvid">
-                <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #333232;"></i>
-                <i class="fa-solid fa-bars fa-2xl" style="color: #333232;"></i>
+                <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                <i class="fa-solid fa-bars fa-2xl"></i>
             </div>
     </div> 
 
@@ -33,35 +33,30 @@
             </section>
             
             <aside>
-                <p class="ny-p">Marketing samler kreativitet og strategi.<br><br>Vi hjælper med at skabe en stærk marketingsstrategi, baseret på analyse, der former jeres forbrugeradfærd og skaber vækst.</p>
+                <p class="p-header">Marketing samler kreativitet og strategi.<br><br>Vi hjælper med at skabe en stærk marketingsstrategi, baseret på analyse, der former jeres forbrugeradfærd og skaber vækst.</p>
             </aside>
         </div>
 </header>
 
-
 <!-- hovedindhold -->
 <main> 
-    <div class="overskrift-main">
-        <h3 class="first-line">Din nøgle til</h3>
-        <h3 class="second-line">Online succes</h3>
-    </div>
+    <h2 class="orange-h2">Din nøgle til</h2>
+    <h2 class="grey-h2">Online succes</h2>
 
 <!-- grå boks til tekst -->
-    <div class="grey-box">
+    <div class="lightgrey-box">
 
-        <div class="cirkel-top"></div>
-        <div class="cirkel-bottom"></div>
+        <h3>Det får i</h3>
 
-        <h4>Det får i</h4>
-        <div class="column-main">
+        <div class="lightgreybox-columns">
              <div class="text-column1">
                 <p>Marketing strategi</p>
                 <p>E-mail strategi og skabeloner</p>
             </div>
             
             <div class="text-column2">
-             <p>Google ads</p>
-                <p>SEO optimering</p>
+            <p>Google ads</p>
+            <p>SEO optimering</p>
          </div>
         </div>
     </div>
@@ -69,16 +64,16 @@
 <!--mørke grå boks med indhold-->
     <div class="plan-boks">
 
-        <h5>Få en skræddersyet marketingsplan</h5><br><br>
+        <h2>Få en skræddersyet marketingsplan</h2> <br><br>
 
         <div class="kolonner-plan">
            <section>
-                <img src="img/dokument.png" alt="marketing dokument">
-                <img src="img/dokument.png" alt="marketing dokument">
+                <img src="img/beigeboks.png" alt="marketing dokument">
+                <img src="img/beigeboks2.png" alt="marketing dokument">
             </section>
 
            <aside>
-                <p class="overskrift">Efter første konsultation vil du modtage:</p>
+                <p class="overskrift-p">Efter første konsultation vil du modtage:</p>
                 <br><br><br>
                 <p class="punkt"><i class="fa-solid fa-check fa-2xl" style="color: #ff1e00;"></i>En individuel trin-for-trin handlingsplan samt en komplet strategi for en periode på 1-6 måneder.</p>
                 <br><br><br>
@@ -94,9 +89,9 @@
     </div>
 
 <!-- kontakt boks -->
-    <h1 class="kontakt-overskrift">Bliv kontaktet</h1>
+    <h2 class="kontakt-overskrift">Bliv kontaktet</h2>
 
-<form class="kontaktform">
+<form>
     <!--tilføj label-->
     <input id="navn" type="text" placeholder="Navn" required>
 
@@ -115,7 +110,7 @@
 </fieldset>
 
 <!-- send knap -->
-    <input type="submit" name="submit" value="send besked"> <!-- aktion knap - send besked -->
+<button type="submit">SEND</button>
 </form>
 
 </main>
@@ -124,30 +119,37 @@
     <img src="img/logo-aflang.png" alt="logo">
     <div class="kolonner">
         <div class="kolonne1"> 
-            <h6>+(45) 23 45 56 67</h6>
-            <h6>support@lionmedia.dk</h6>
-            <h6>info@lionmedia.dk</h6>
-            <h6>CVR: 44019574</h6>
+            <a href="tel:12345678">+(45) 12 34 56 78</a>
             <br>
+            <a href="mailto:lionmediaaps@gmail.com">lionmediaaps@gmail.com</a>
+            <p>CVR: 44019574</p>
+            <br>
+            <!--Link til TikTok-->
             <img class="tiktok" src="img/tiktok.png" alt="tiktok logo">
+            <a href="https://www.instagram.com/lionmediaaps/">
             <img class="insta" src="img/instagram.png" alt="instagram logo">
+            </a>
         </div>
 
         <div class="kolonne2"> 
-            <h6>Marketing</h6>
-            <h6>Sociale medier</h6>
-            <h6>Webdesign</h6>
-            <h6>Digital strategi</h6>
+            <nav>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="#">Sociale Medier</a></li>
+                <li><a href="#">Webdesign</a></li>
+                <li><a href="digitalstrategi.html">Digital Strategi</a></li>
+            </nav>
         </div>
 
         <div class="kolonne3"> 
-            <h6>Cases</h6>
-            <h6>Få en pris</h6>
-            <h6>Om LionMedia</h6>
+        <nav>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Få en pris</a></li>
+            <li><a href="omos.html">Om Lionmedia</a></li>
+        </nav>
         </div>        
     </div>
     <hr>
-    <h6>LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</h6>
+    <p class="info">LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</p>
     <br>
     <br>
 </footer>
