@@ -10,46 +10,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="css/kategorier.css">
+<link rel="stylesheet" href="digitalstrategi.css">
 </head>
 
 <body>
-    <!-- Header indhold -->
     <header>
         <div class="menu-top">
-            <img src="img/logooverskrift.png">
-            <p class="lionmedia">LionMedia<p>
+            <h1>LionMedia</h1>
                 <div class="menu-hvid">
-                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-                    <i class="fa-solid fa-bars fa-2xl"></i>
+                    <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #333232;"></i>
+                    <i class="fa-solid fa-bars fa-2xl" style="color: #333232;"></i>
                 </div>
-        </div> 
-
-    <p class="rullende-tekst">Vejen frem</p>
-            
-        <div class="kolonner-header">
-            <section>
-                <h1>Digital strategi</h1>
-            </section>
-            
-            <aside>
-                <p class="p-header">Kom med ind i den digitale verden om strategi, hvor visioner forvandles til målbare resultater. 
-                    <br><br>Vi hjælper med at skabe målrettet indhold og optimere jeres online plads på markedet.</p>
-            </aside>
         </div>
         
-    </header>
+        <h2>Digital Strategi</h2>
+        <div class="header-tekst">
+            <p class="k1">Vejen frem</p>
+            <p class="k2">Kom med ind i den digitale verden om strategi, hvor visioner forvandles til målbare resultater. 
+                <br><br>Vi hjælper med at skabe målrettet indhold og optimere jeres online plads på markedet.</p>
+        </div>
+    </header> 
     
-    <!-- Hovedindhold -->
+    <!-- hovedindhold -->
 <main> 
-    <h2 class="orange-h2">Digitalt lederskab</h2>
-    <h2 class="grey-h2">Strategisk vækst</h2>
+    <div class="overskrift-main">
+        <h3 class="first-line">Digitalt lederskab</h3>
+        <h3 class="second-line">Strategisk vækst</h3>
+    </div>
 
-    <div class="darkgrey-box">
-
-        <h3>Det får i</h3>
-
-        <div class="darkgreybox-columns">
+    <div class="sort-box">
+        <div class="cirkel-top"></div>
+        <div class="cirkel-bottom"></div>
+        <h4>Det får i</h4>
+        <div class="column-main">
              <div class="text-column1">
                 <p>Brandanalyse</p>
                 <p>Kommunikation</p>
@@ -57,22 +50,22 @@
             </div>
             
             <div class="text-column2">
-            <p>Brandposition og USP</p>
+             <p>Brandposition & USP</p>
             <p>Målgruppeanalyse</p>
          </div>
         </div>
     </div>
 
-    <div class="strategi-boks">
-    <h2>Din personlige digitale strategi</h2>
-        <div class="kolonner-plan">
-            <section>
-                <img src="img/beigeboks.png" alt="#">
-                <img src="img/beigeboks2.png" alt="#">
-            </section>
+<div class="strategi-boks">
+<h5 class="strategi-overskift">Din personlige digitale strategi</h5>
+  <div class="kolonne-strategi">
+    <section>
+    <img src="img/beigeboks.png" alt="">
+    <img src="img/beigeboks2.png" alt="">
+    </section>
 
     <aside>
-        <p class="overskrift-p"> Efter første konsultation vil du modtage:</p>
+        <p class="start-skrift"> Efter første konsultation vil du modtage:</p>
         <br><br><br>
         <p class="punkt"><i class="fa-solid fa-check fa-2xl" style="color:#ff1e00;"></i>  En grundig brandanalyse for at evaluere styrker, svagheder, muligheder og trusler ved det eksisterende brand.</p>
         <br><br><br>
@@ -90,10 +83,10 @@
 </div>
 
 <div class="tidligere-case">
-    <h2>Tidligere case</h2>
+    <h5 class="case-overskift">Tidligere case</h5>
       <div class="kolonne-case">
         <section class="caseimg">
-        <img src="img/hardskills.png" alt="computerskærm med Hard Skills Station logo">
+        <img src="img/hardskills.png" alt="">
         </section>
     
         <aside class="beskrivelse">
@@ -110,28 +103,27 @@
     </div>
 
 <!-- kontakt boks -->
-<h2 class="kontakt-overskrift">Bliv kontaktet</h2>
-
-<form>
-    <!--tilføj label-->
-    <input id="navn" type="text" placeholder="Navn" required>
-
-    <input id="mail" type="email" placeholder="E-mail" required>
-
-    <input id="tel" type="tel" placeholder="Telefon" required>
-
-    <input id="firma" type="text" placeholder="Virksomhed" required>
-
+<h1 class="kontakt-overskrift">Bliv kontaktet</h1>
+ 
+<form class="kontaktform">
+ <input id="navn" type="text" placeholder="Navn" required>
+ 
+ <input id="mail" type="email" placeholder="E-mail" required>
+ 
+ <input id="tel" type="tel" placeholder="Telefon" required>
+ 
+ <input id="firma" type="text" placeholder="Virksomhed" required>
+ 
 <!-- checkbox-->
 <fieldset class="checkbox">
-    <div>
-        <input type="checkbox" id="nyhedsbrev">
-        <label for="nyhedsbrev">Jeg ønsker at modtage relevante informationer og nyheder via e-mail </label>
-    </div>
+ <div>
+ <input type="checkbox" id="nyhedsbrev">
+ <label for="nyhedsbrev">Jeg ønsker at modtage relevante informationer og nyheder via e-mail </label>
+ </div>
 </fieldset>
-
+ 
 <!-- send knap -->
-<button type="submit">SEND</button>
+ <input type="submit" name="submit" value="send besked"> <!-- aktion knap - send besked -->
 </form>
 
 </main>
@@ -140,37 +132,32 @@
     <img src="img/logo-aflang.png" alt="logo">
     <div class="kolonner">
         <div class="kolonne1"> 
-            <a href="tel:12345678">+(45) 12 34 56 78</a>
+            <h6>+(45) 23 45 56 67</h6>
+            <h6>support@lionmedia.dk</h6>
+            <h6>info@lionmedia.dk</h6>
+            <h6>CVR: 44019574</h6>
             <br>
-            <a href="mailto:lionmediaaps@gmail.com">lionmediaaps@gmail.com</a>
-            <p>CVR: 44019574</p>
-            <br>
-            <!--Link til TikTok-->
             <img class="tiktok" src="img/tiktok.png" alt="tiktok logo">
-            <a href="https://www.instagram.com/lionmediaaps/">
             <img class="insta" src="img/instagram.png" alt="instagram logo">
-            </a>
         </div>
 
         <div class="kolonne2"> 
-            <nav>
-                <li><a href="marketing.html">Marketing</a></li>
-                <li><a href="#">Sociale Medier</a></li>
-                <li><a href="#">Webdesign</a></li>
-                <li><a href="digitalstrategi.html">Digital Strategi</a></li>
-            </nav>
+            <h6>Marketing</h6>
+            <h6>Sociale medier</h6>
+            <h6>Webdesign</h6>
+            <h6>Digital strategi</h6>
         </div>
 
         <div class="kolonne3"> 
-        <nav>
-            <li><a href="#">Cases</a></li>
-            <li><a href="#">Få en pris</a></li>
-            <li><a href="omos.html">Om Lionmedia</a></li>
-        </nav>
+            <h6>Cases</h6>
+            <h6>Få en pris</h6>
+            <h6>Om LionMedia</h6>
         </div>        
     </div>
     <hr>
-    <p class="info">LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</p>
+    <h6>LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</h6>
+    <br>
+    <br>
 </footer>
 
 </body>
