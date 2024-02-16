@@ -1,3 +1,401 @@
-*{
-    
+/*Generel styling*/
+ 
+* { 
+	box-sizing: border-box; /*Padding og border inkluderes i bredde og højde*/
+	margin: 0;
 }
+
+img{
+	max-width: 100%;
+}
+
+/* Generel styling af h1-h6 + p */
+h1{
+	font-size: 90px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: #ff1e00;
+	margin-top: 110px;
+}
+
+h2{			
+	font-size: 90px; 
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #fff;
+}
+
+/*indhold header*/
+header {
+	background-color: #2b2b2b;
+	height: 100vh;
+	max-width: auto;
+}
+
+.lionmedia{	/* tekst LionMedia navn */
+	font-size: 50px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: white;
+	margin-left: -200px;
+}
+
+.menu-top img {
+    width: 100px; 
+    height: auto; 
+    margin-top: -20px;
+  }
+
+.menu-top{
+ 	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.menu-hvid {
+	width: 45vw;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #fff;
+}
+
+.fa-bars{
+	display: flex;
+	justify-content: right;
+	margin-right: 20px;
+    color: #2b2b2b;
+}
+
+.fa-magnifying-glass{
+	display: flex;
+	justify-content: left;
+	margin-left: 20px;
+	margin-top: 22px;
+    color: #2b2b2b;
+}
+
+/* header tekst bokse + overskrifter */
+.rullende-tekst{ 		
+    font-size: 12vh;
+	font-family: "DM Serif Display", serif;
+	color: white;
+    text-align: center;
+	margin-bottom: 100px;
+	margin-top: 30px;
+}
+
+.kolonner-header{
+	display: grid;
+	grid-template-columns: 18% 32% 2% 44% 5%;
+}
+
+.kolonner-header section{
+    grid-column-start: 2;
+   
+}
+
+.kolonner-header aside{
+    grid-column-start: 4;
+}
+
+.p-header{
+    font-size: 30px;
+    font-family: "Libre Calson Text", serif;	
+    text-align: left;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 80px;
+  }
+
+  /* main indhold */
+.orange-h2 {
+    color: #ff1e00;
+	display: flex;
+  	justify-content: left;
+   margin-left: 23vw;
+   margin-top: 90px;
+   font-size: 80px;
+	line-height: 1;
+}
+
+.grey-h2 {
+    color: #2b2b2b;
+    display: flex;
+    justify-content: right;
+    margin-right: 23vw;
+	margin-bottom: 90px;
+	font-size: 80px;
+	line-height: 1;
+}
+
+/* Cases boks */
+.cases-tekst{
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #000; 
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.cases-billeder{
+	display: flex;
+    justify-content: space-evenly;
+	padding-left: 160px;
+	padding-bottom: 70px;
+}
+
+.case1, .case2, .case3{
+	transition: 1s;
+}
+
+.case1:hover, .case2:hover, .case3:hover{
+	transform:scale(1.1);
+	z-index: 2;
+}
+
+.case-img{
+	width: 70%;
+	height: auto;
+}
+
+.cases-box {
+	background-color: #d9d9d9;
+	height: auto;
+	max-width: auto;
+	border-radius: 20px;
+}
+
+/* pop up styling */
+
+/* Stil for at skjule pop-up vindue*/
+section{
+	display: grid;
+	grid-template-columns: 5% 25% 65% 5%;
+	}
+	
+	article{
+		grid-column-start: 2;
+		margin-top: 30px;
+	}
+	
+	article img{
+		width: 100%;
+		margin-left: -30px;
+	}
+	
+	aside{
+		grid-column-start: 3;
+		margin-top: 20px;
+	}
+	
+	#popup1, #popup2, #popup3 {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		background-color: #2b2b2b;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		z-index: 1000;
+		width: 80vw;
+	  }
+	
+	  .log-ind{
+		font-size: 70px;
+		font-family: "DM Serif Display", serif;
+		text-align: left;
+		margin-left: 404px;
+		color: #fff;
+		margin-bottom: 30px;
+	  }
+	
+	.felt{
+		color: #ff1e00;
+		margin-left: 5px;
+		margin-bottom: 20px;
+		font-family: 'Libre Caslon Text', serif;	
+        font-size: 30px;
+	}
+	
+	.felt2{
+	margin-bottom: 30px;
+	margin-left: 5px;
+    line-height: 1.5;
+	color: #fff;
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 20px;	
+	}
+	
+	.greywolf-img{
+		margin-top: -70px;
+	}
+	
+    .web-img{
+        margin-top: 30px;
+    }
+
+	  /* Stil for at vise pop-up vinduet, når det har et id på target attributten */
+	  #popup1:target, #popup2:target, #popup3:target {
+		display: block;
+	  }
+	  
+	  /* Stil for linket */
+	  .luk {
+		text-decoration: none;
+		cursor: pointer;
+	  }
+	  
+	  /* Stil for at ændre linkets farve, når det er i hover-tilstand */
+	  .luk:hover {
+		color: #000000;
+	  }
+
+/*Kontaktform*/
+form { /*styling af selve kontaktboksen*/
+	border-radius: 30px;
+	background-color: #EDECEC;
+	padding: 3em;
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 10vh;
+	border: 1px solid #2b2b2b;
+  }
+
+.kontakt-overskrift {
+    color: #ff1e00;
+	margin-top: 80px;
+  	margin-bottom: 4vh;
+}
+  
+input[type=text], input[type=email], input[type=tel], input[type=firma]{
+	  width: 100%;
+	  padding: 1em;
+	  border: 1px solid #2b2b2b;
+	  border-radius: 50px;
+	  margin-top: 0.5em;
+	  margin-bottom: 1em;
+  }
+
+fieldset {
+	border-style: none;
+	margin-bottom: 0.8em;
+}
+
+input[type=checkbox]{
+	margin: 0.8em 0;
+}
+  
+button {
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 1.5em;
+	border: none;
+	border-radius: 100px;
+	width: 40%;
+	font-size: 25px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+button:hover{
+background-color: #2b2b2b;
+}
+
+/*footer*/
+footer {
+	background-color: #333232;
+	height: auto;
+	width: auto;
+} 
+
+footer img{
+	max-width: 15%;
+	height: auto;
+	padding: 20px;
+}
+
+.kolonner{
+	display: grid;
+	grid-template-columns: 30% 5% 30% 5% 30%;
+	padding-left: 20px;
+}
+
+.kolonne1{
+	grid-column-start: 1;
+	margin-top: 30px;
+}
+
+.kolonne1 p{
+	line-height: 1;
+	text-align: left;
+	font-size: 23px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.kolonne1 a {
+	font-size: 23px;
+	font-family: "DM Serif Display", serif;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.kolonne2 nav li, .kolonne3 nav li{
+	text-align: left;
+	margin-right: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #fff;
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.kolonne2 a, .kolonne3 a{
+	color: #fff;
+	line-height: 0.3;
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.kolonne2{
+	grid-column-start: 3;
+}
+
+.kolonne3{
+	grid-column-start: 5;
+}
+
+hr{
+	border: 1px solid #fff;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.info{
+	font-size: 23px;
+	font-family: "DM Serif Display", serif;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.kolonne1 img{
+	max-width: 25%;
+	height: auto;
+	margin-left: -20px;
+}
+  
