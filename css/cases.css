@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+  }
+
+  /*popup*/
+
+/* Stil for at skjule pop-up vindue*/
+section{
+display: grid;
+grid-template-columns: 5% 25% 65% 5%;
+margin-top: 20px;
+}
+
+article{
+    grid-column-start: 2;
+}
+
+article img{
+    width: 100%;
+    margin-left: -30px;
+}
+
+aside{
+    grid-column-start: 3;
+    margin-top: 20px;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #2b2b2b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 70vw;
+  }
+
+  .log-ind{
+    font-size: 70px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #fff;
+    margin-bottom: 30px;
+  }
+
+.felt{
+	color: #ff1e00;
+    text-align: center;
+    font-family: 'Libre Caslon Text', serif;	
+}
+
+.felt2{
+margin-bottom: 30px;
+margin-left: 5px;
+color: #fff;
+font-family: 'Libre Caslon Text', serif;	
+}
+
+
+  /* Stil for at vise pop-up vinduet, når det har et id på target attributten */
+  #popup:target {
+    display: block;
+  }
+  
+  /* Stil for linket */
+  .luk {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Stil for at ændre linkets farve, når det er i hover-tilstand */
+  .luk:hover {
+    color: #000000;
+  }
