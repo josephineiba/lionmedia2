@@ -103,15 +103,27 @@
 
         <textarea id="besked" cols="80" rows="15" placeholder="Din forespørgsel..." required></textarea> <!--cols og rows definere størrelses på tekstboksen-->
 
-        <fieldset class="kontaktes-valg">
-            <legend>Hvor vil I kontaktes?</legend>
-         
-            <input id="tel" type="radio" value="tel" name="kontaktes">
-            <label for="tel">Telefon</label>
-            
-            <input id="mail" type="radio" value="mail" name="kontaktes">
-            <label for="mail">E-Mail</label>
-        </fieldset>
+            <h3>Hvor vil I kontaktes?</h3>
+
+            <div class="kontakt-telefon">
+                <label for="tel"class="kontakttekst">Telefon</label>
+                <select id="tel" name="select">
+                    <option value="0" selected disabled>Vælg tidspunkt</option> 
+                    <option value="1">kl. 08:00-10:00</option>
+                    <option value="2">kl. 10:00-12:00</option>
+                    <option value="3">kl. 12:00-14:00</option>
+                    <option value="4">kl. 14:00-16:00</option>
+                </select>
+            </div>
+
+            <div class="kontakt-mail">
+                <label for="mail"class="kontakttekst">E-mail</label>
+                <select id="mail" name="select">
+                    <option value="0" selected disabled>Vil du kontaktes på E-mail?</option> 
+                    <option value="1">Ja</option>
+                    <option value="2">Nej</option>
+                </select>
+            </div>
 
         <button type="submit">SEND</button>
 

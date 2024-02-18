@@ -15,14 +15,31 @@
 <body>  
 
 <header>
-<!-- menu linje -->
-    <div class="menu-top">
-        <h1>LionMedia</h1>
-            <div class="menu-hvid">
-                <i class="fa-solid fa-magnifying-glass fa-2xl" onclick="show()"></i>
-                <i class="fa-solid fa-bars fa-2xl"></i>
-            </div>
-    </div>
+    <!-- menu linje -->
+    <nav>
+        <div class="menu-top">
+            <h1>LionMedia</h1>
+                <div class="menu-hvid">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                   <div class="openmenu"><i class="fa-solid fa-bars fa-2xl"></i></div>
+                </div>
+                <ul class="mainmenu">
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Sociale medier</a></li>
+                    <li><a href="#">Webdesign</a></li>
+                    <li><a href="#">Digital strategi</a></li>
+                    <hr>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Få en pris</a></li>
+                    <li><a href="#">Om LionMedia</a></li>
+                    <div class="closemenu"><i class="fa-solid fa-xmark"></i></div>
+                    <span class="icons">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </span>
+                </ul>
+        </div>
+    </nav>
 
 <!-- animeret indhold i header -->
     <div class="videocontainer">
@@ -31,6 +48,7 @@
     </div>
    
 </header>
+
 
 <main>
  <!--Hovedindhold--> 
@@ -181,6 +199,7 @@
 <script>
   AOS.init();
 </script>
+<script src="app.js"></script>
 
 </body>
 </html>

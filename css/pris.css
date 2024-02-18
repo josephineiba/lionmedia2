@@ -95,7 +95,7 @@ h1{
 	font-family: "DM Serif Display", serif;
 	text-align: center;
 	color: white;
-  margin-top: 110px;
+    margin-top: 110px;
 }
 
 .ny-p{
@@ -172,6 +172,46 @@ input[type=text], input[type=email], input[type=tel], input[type=firma], textare
     margin-bottom: 1em;
     width: 90%;
     background-color: #EDECEC;
+}
+
+h3{
+    font-size: 25px;
+    font-family: "DM Serif Display", serif;
+}
+
+/*Styling af dropdown*/
+select{
+	padding: 0.675em 6em 0.675em 1em;
+	appearance: none;
+	-webkit-appearance: none; /*appearance fjerne default udseende på dropdown*/
+	cursor: pointer;
+}
+
+.kontakttekst{
+    font-size: 20px;
+    font-family: "Libre Calson Text", serif;
+    color:#000; 
+    border-bottom: 10px;
+    margin-right: 20px;
+}
+
+.kontakt-telefon, .kontakt-mail {
+	position: relative;
+    margin-top: 20px;
+  }
+
+.kontakt-telefon::before, .kontakt-mail::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid #000;
+  top: 48%;
+}
+
+.kontakt-telefon::after, .kontakt-telefon::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid #000;
+  top: 63%;
 }
 
 .visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
@@ -263,6 +303,9 @@ textarea {
 
 legend{
     font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "Libre Calson Text", serif;
+    color:#000; 
 }
 
 .kontaktes-valg{
@@ -381,4 +424,87 @@ hr{
 	max-width: 25%;
 	height: auto;
 	margin-left: -20px;
+}
+
+
+/*Responsiv skal tilpasses!*/
+
+/*mobil*/
+@media only screen and (max-width: 600px){
+
+/*Header*/
+
+
+
+/*Footer*/
+
+footer{
+	height: auto;
+}
+
+footer img{
+	max-width: 50%;
+	height: auto;
+	margin-left: 25vw;
+}
+
+.kolonner{
+	display: flex;
+	flex-direction: column;
+}
+
+.kolonne1{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+
+.kolonne2{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.kolonne3{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.insta{
+	max-width: 20%;
+}
+.tiktok{
+	max-width: 20%;
+}
+
+.kolonne1 p{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+
+}
+
+
+/*ipad + op til 13 tommer computerskærm*/
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+
+/*Header*/
+
+
+/*Footer*/
+
+footer{
+	height: auto;
+}
+
+footer img{
+	max-width: 50%;
+	height: auto;
+	margin-left: 25vw;
+}
+
+footer p{
+	font-size: 17px;
+}
+
 }
