@@ -25,19 +25,11 @@ h2{
 	color: #fff;
 }
 
-/*indhold header*/
+/*indhold header styling*/
 header {
 	background-color: #2b2b2b;
 	height: 100vh;
 	max-width: auto;
-}
-
-.lionmedia{	/* tekst LionMedia navn */
-	font-size: 50px;
-	font-family: "DM Serif Display", serif;
-	text-align: left;
-	color: white;
-	margin-left: -200px;
 }
 
 .menu-top img {
@@ -46,12 +38,20 @@ header {
     margin-top: -20px;
   }
 
-.menu-top{
+  .lionmedia {
+	font-size: 50px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: white;
+    margin-left: -400px;
+    }
+
+.menu-top{ 
  	display: flex;
 	justify-content: space-between;
-	padding-top: 40px;
-	padding-left: 60px;
-	padding-right: 60px;
+	 padding-top: 40px;
+	 padding-left: 60px;
+	 padding-right: 60px;
 }
 
 .menu-hvid {
@@ -65,7 +65,7 @@ header {
 	display: flex;
 	justify-content: right;
 	margin-right: 20px;
-    color: #2b2b2b;
+	color: #333232;
 }
 
 .fa-magnifying-glass{
@@ -73,17 +73,120 @@ header {
 	justify-content: left;
 	margin-left: 20px;
 	margin-top: 22px;
-    color: #2b2b2b;
+	color: #333232;
 }
 
+.menu-telefon{
+	display: none;
+}
+
+/*dropdown menu*/
+nav .mainmenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainmenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff1e00;
+    font-size: 1.5rem;
+}
+
+.mainmenu hr{
+    border-bottom: 2px solid #ff1e00;
+    margin: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+nav .openmenu{
+    cursor: pointer;
+}
+ 
+nav .mainmenu .closemenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #ff1e00;
+}
+
+.fa-tiktok:hover{color:rgb(99, 132, 243)}
+.fa-instagram:hover{color:rgb(223, 55, 206)}
+ 
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+    nav .mainmenu{
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #EDECEC;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+ 
+    }
+   
+    nav .mainmenu li a:hover{
+        background: none;
+        color: #2b2b2b;
+        font-size: 1.6rem;
+    }
+	
+    .icons i{
+       display: inline-block;
+       padding: 12px;
+    }
+/*dropdown slut*/
+
 /* header tekst bokse + overskrifter */
-.rullende-tekst{ 		
-    font-size: 12vh;
+.rullende-tekst{
+    font-size: 25vh;
 	font-family: "DM Serif Display", serif;
-	color: white;
-    text-align: center;
-	margin-bottom: 100px;
-	margin-top: 30px;
+	text-align: center;
+	color: #2b2b2b;
+	-webkit-text-stroke: 2px #fff;
+    margin-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee{
+	0%{
+		transform: translateX(100%);
+	}
+
+	100%{
+		transform: translateX(-100%);
+	}
+}
+
+h1{
+	font-size: 90px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #ff1e00;
+    margin-top: 110px;
 }
 
 .kolonner-header{
@@ -91,7 +194,7 @@ header {
 	grid-template-columns: 18% 32% 2% 44% 5%;
 }
 
-.kolonner-header section{
+.kolonner-header article{
     grid-column-start: 2;
    
 }
@@ -399,3 +502,201 @@ hr{
 	margin-left: -20px;
 }
   
+/*Responsiv skal tilpasses!*/
+
+/*mobil*/
+@media only screen and (max-width: 600px){	
+	/*Header*/
+
+	main{
+		width: 100%;
+	}
+	
+	form {
+		display: flex;
+	}	
+	
+	header{
+		height: 115vh;
+		width: 100vw;
+	}
+
+	.lionmedia{
+		margin-left: -40px;
+		font-size: 40px;
+	}
+
+	.menu-top{
+		display: flex;
+		justify-content: space-between;
+	 	padding-top: 20px;
+	 	padding-left: 20px;
+	 	padding-right: 10px;
+	}
+
+	.menu-hvid{
+		background-color: #2b2b2b;
+		width: 25vw;
+	}
+
+	.fa-bars{
+		color: #fff;
+	}
+
+	.fa-magnifying-glass{
+		color: #fff;
+	}
+
+nav .mainmenu{
+	width: 100vw;
+}
+
+.kolonner-header {
+    display: grid;
+	grid-template-rows: 50% 50%;
+  }
+
+  .kolonner-header article { 
+	padding: 1em;
+	grid-row-start: 1;
+	width: 100%;
+	text-align: center;
+}
+
+.kolonner-header aside {
+	padding: 1em;
+	grid-row-start: 2;
+	width: 100%;
+	text-align: center;
+	margin-top: -400px;
+	margin-bottom: 40px;
+}
+
+h1{
+	margin-top: -20px;
+}
+
+
+/*Main*/
+.orange-h2{
+	margin-left: 25px;
+	font-size: 45px;
+}
+
+.grey-h2{
+	justify-content: center;
+	margin-left: 120px;
+	font-size: 45px;
+}
+
+/*cases*/
+
+h4{
+	margin-top: -5px;
+}
+
+.case-img{
+	width: 100%;
+	height: auto;
+}
+
+.cases-billeder{
+	display: flex;
+	justify-content: space-evenly;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 70px;
+	gap: 4px;
+}
+
+/*Footer*/
+
+footer{
+	height: auto;
+}
+
+footer img{
+	max-width: 50%;
+	height: auto;
+	margin-left: 25vw;
+}
+
+.kolonner{
+	display: flex;
+	flex-direction: column;
+}
+
+.kolonne1{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+
+.kolonne2{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.kolonne3{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.insta{
+	max-width: 20%;
+}
+.tiktok{
+	max-width: 20%;
+}
+
+.kolonne1 p{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+}
+
+/*ipad + op til 13 tommer computerskærm*/
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+main{
+		width: 100%;
+	}
+	
+	form {
+		display: flex;
+	}	
+
+	/*Header*/
+	
+	header{
+		height: auto;
+	}
+
+	h1{
+		font-size: 45px;
+	}
+
+	.menu-top{
+		display: flex;
+		justify-content: space-between;
+	 	padding-top: 20px;
+	 	padding-left: 20px;
+	 	padding-right: 10px;
+	}
+
+	.menu-hvid{
+		background-color: #2b2b2b;
+		width: 18vw;
+	}
+
+	.fa-bars{
+		color: #fff;
+	}
+
+	.fa-magnifying-glass{
+		color: #fff;
+	}
+	
+}
+
+
