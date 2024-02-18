@@ -15,38 +15,54 @@
 <body> 
 
     <header>
-        <!-- menu linje -->
+        <nav>
             <div class="menu-top">
                 <img src="img/logooverskrift.png" alt="Lionmedia logo orange og hvid">
-                <h1>LionMedia</h1>
+                <p class="lionmedia">LionMedia</p>
                     <div class="menu-hvid">
-                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #333232;"></i>
-                        <i class="fa-solid fa-bars fa-2xl" style="color: #333232;"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                       <div class="openmenu"><i class="fa-solid fa-bars fa-2xl"></i></div>
                     </div>
+                    
+                    <ul class="mainmenu">
+                        <li><a href="marketing.html">Marketing</a></li>
+                        <li><a href="#">Sociale medier</a></li>
+                        <li><a href="#">Webdesign</a></li>
+                        <li><a href="digitalstrategi.html">Digital strategi</a></li>
+                        <hr>
+                        <li><a href="cases-side.html">Cases</a></li>
+                        <li><a href="pris.html">Få en pris</a></li>
+                        <li><a href="omos.html">Om LionMedia</a></li>
+                        <div class="closemenu"><i class="fa-solid fa-xmark"></i></div>
+                        <span class="icons">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-tiktok"></i>
+                        </span>
+                    </ul>
             </div>
+        </nav>
+    
+    <!--Overskrift og præsentation--> 
+    <p class="rullende-tekst">Skab din fremtid med LionMedia</p>
+    
+    <section class="kolonne"> <!--section skaber et link mellem article og aside. flex-class gør det muligt at sætte dem op ved siden af hinanden-->
+        <article>
+            <h1>Om Lion Media</h1>
+        </article>
         
-        <!--Overskrift og præsentation--> 
-        <h2>Om Lion Media</h2>
+        <aside>
+            <p class="ny-p">Velkommen til <span style="color: #ff1e00;">LionMedia</span>, hvor vi er dedikerede til at støtte og hjælpe andre virksomheder og iværksættere! <br><br> Vores dynamiske team består af unge og engagerede fagfolk, der konstant holder sig opdaterede på de nyeste trends og tendenser!</p>
+        </aside>
+    </section>
+</header>
         
-        <section class="kolonne"> <!--section skaber et link mellem article og aside. flex-class gør det muligt at sætte dem op ved siden af hinanden-->
-            <article>
-                <h3>Skab din fremtid med LionMedia</h3>
-            </article>
-            
-            <aside>
-                <p class="ny-p">Velkommen til LionMedia, hvor vi er dedikerede til at støtte og hjælpe andre virksomheder og iværksættere! <br><br> Vores dynamiske team består af unge og engagerede fagfolk, der konstant holder sig opdaterede på de nyeste trends og tendenser!</p>
-            </aside>
-        </section>
-
-    </header>
-
    <main>
         <!--Tekstpunkter og video--> 
         <h4>Hvad kan vi så ved</h4>
-        <h4 class="customh4">LionMedia</h4>
+        <h4 class="customh4">LionMedia?</h4>
         <br>
         <br>
-        <section class="kolonne2"> <!--section skaber et link mellem article og aside. flex-class gør det muligt at sætte dem op ved siden af hinanden-->        
+        <section class="sectionvideo"> <!--section skaber et link mellem article og aside. flex-class gør det muligt at sætte dem op ved siden af hinanden-->        
             <article>
                 <video class="video" controls>
                     <source src="video/brandingvideo.mp4" type="video/mp4">
@@ -69,7 +85,7 @@
         
     <div class="nyboks">
         <h4 class="hvem-er-vi1">Hvem står bag</h4>
-        <h4 class="hvem-er-vi2">LionMedia</h4>
+        <h4 class="hvem-er-vi2">LionMedia?</h4>
     
         <div class="teamet">
         <div class="boks1">
@@ -95,54 +111,96 @@
         </div>
     </div>
         
-        <!--Dette tilbyder vi --> 
-         <h1 class="ny-customh1">Dette tilbyder vi</h1>
-        <br>
-        <br>
-    <div class="imagecontainer">
-        <div><img class="image" src="img/marketingboks.png" alt="Marketing"></div>
-        <div><img class="image" src="img/someboks.png" alt="Sociale medier"></div>
-        <div><img class="image" src="img/webdesignboks.png" alt="Webdesign"></div>
-        <div><img class="image" src="img/digitalboks.png" alt="Digital Strategi"></div>
+        <!--Dette tilbyder vi - bokse med tekst --> 
+    <h2 class="service-overskrift">Dette tilbyder vi</h2>
+    <div class="servicecontainer">
+        <div class="serviceboks1">
+            <h3>Marketing</h3>
+            <hr>
+            <p>Marketing strategi</p>
+            <p>SEO</p>
+            <p>Google ads</p>
+            <p>E-mail marketing</p>
+            <button class="service-knap">Læs mere</button>
+        </div>
+    
+        <div class="serviceboks2">
+            <h3>Sociale medier</h3>
+            <hr>
+            <p>Content creation</p>
+            <p>Strategi</p>
+            <p>Annoncer</p>
+            <p>Analyser</p>
+            <p></p>
+            <button class="service-knap">Læs mere</button>
+        </div>
+    
+        <div class="serviceboks3">
+            <h3>Webdesign</h3>
+            <hr>
+            <p>Visuel identitet</p>
+            <p>Responsivt design</p>
+            <p>Designprincipper</p>
+            <p>webtilgængelighed</p>
+            <button class="service-knap">Læs mere</button>
+        </div>
+    
+        <div class="serviceboks4">
+            <h3>Digital strategi</h3>
+            <hr>
+            <p>Brandanalyse</p>
+            <p>Kommunikation</p>
+            <p>Platforme</p>
+            <p>Målgruppeanalyse</p>
+            <button class="service-knap">Læs mere</button>
+        </div>
     </div>
- <br>
-    <h5>Skab din helt personlige pakke her</h5>
-    <div class="knap-pris">
-    <button><a href="#"></a>Få en pris</button>
- </div> 
-<br>
-<br>
+        <br>
+        <p class="pris-tekst">Skab din helt personlige pakke her</p>
+        <div class="knap-pris">
+        <button><a href="#"></a>Få en pris</button>
+        </div> 
+    <br>
+    <br>
+
     </main>
     
-    <!--Footer --> 
+    <!--Footer--> 
     <footer>
         <img src="img/logo-aflang.png" alt="logo">
-        <div class="footerkolonne">
-            <div class="footerkolonne1"> 
-                <h6>+(45) 23 45 56 67</h6>
-                <h6>support@lionmedia.dk</h6>
-                <h6>info@lionmedia.dk</h6>
-                <h6>CVR: 44019574</h6>
+        <div class="kolonner">
+            <div class="kolonne1"> 
+                <a href="tel:12345678">+(45) 12 34 56 78</a>
                 <br>
+                <a href="mailto:lionmediaaps@gmail.com">lionmediaaps@gmail.com</a>
+                <p>CVR: 44019574</p>
+                <br>
+                <!--Link til TikTok-->
                 <img class="tiktok" src="img/tiktok.png" alt="tiktok logo">
+                <a href="https://www.instagram.com/lionmediaaps/">
                 <img class="insta" src="img/instagram.png" alt="instagram logo">
+                </a>
             </div>
     
-            <div class="footerkolonne2"> 
-                <h6>Marketing</h6>
-                <h6>Sociale medier</h6>
-                <h6>Webdesign</h6>
-                <h6>Digital strategi</h6>
+            <div class="kolonne2"> 
+                <nav>
+                    <li><a href="marketing.html">Marketing</a></li>
+                    <li><a href="#">Sociale Medier</a></li>
+                    <li><a href="#">Webdesign</a></li>
+                    <li><a href="digitalstrategi.html">Digital Strategi</a></li>
+                </nav>
             </div>
     
-            <div class="footerkolonne3"> 
-                <h6>Cases</h6>
-                <h6>Få en pris</h6>
-                <h6>Om LionMedia</h6>
+            <div class="kolonne3"> 
+            <nav>
+                <li><a href="cases-side.html">Cases</a></li>
+                <li><a href="pris.html">Få en pris</a></li>
+                <li><a href="omos.html">Om Lionmedia</a></li>
+            </nav>
             </div>        
         </div>
         <hr>
-        <h6>LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</h6>
+        <p class="info">LionMedia A/S  |  Universitetsparken 2  |  6000 Kolding  |  Cookies</p>
         <br>
         <br>
     </footer>
@@ -150,7 +208,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script>    
+
+<script src="app.js"></script>
     
     </body>
     </html>
