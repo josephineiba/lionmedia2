@@ -35,7 +35,7 @@ img{
 	font-family: "DM Serif Display", serif;
 	text-align: left;
 	color: white;
-    margin-left: -300px;
+    margin-left: -400px;
     }
   
 .menu-hvid {
@@ -57,6 +57,84 @@ img{
 	margin-left: 20px;
 	margin-top: 22px;
 }
+
+/*dropdown menu*/
+nav .mainmenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainmenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff1e00;
+    font-size: 1.5rem;
+}
+
+.mainmenu hr{
+    border-bottom: 2px solid #ff1e00;
+    margin: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+nav .openmenu{
+    cursor: pointer;
+}
+ 
+nav .mainmenu .closemenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #ff1e00;
+}
+
+.fa-tiktok:hover{color:rgb(99, 132, 243)}
+.fa-instagram:hover{color:rgb(223, 55, 206)}
+ 
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+    nav .mainmenu{
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #EDECEC;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+ 
+    }
+   
+    nav .mainmenu li a:hover{
+        background: none;
+        color: #2b2b2b;
+        font-size: 1.6rem;
+    }
+	
+    .icons i{
+       display: inline-block;
+       padding: 12px;
+    }
+/*dropdown slut*/
 
 /*Om os præsentation*/
 
@@ -83,18 +161,32 @@ img{
   /*tekst og overskrifter*/
 
 .rullende-tekst{
-    font-size: 20vh;
+    font-size: 25vh;
 	font-family: "DM Serif Display", serif;
 	text-align: center;
-	color: white;
+	color: #2b2b2b;
+	-webkit-text-stroke: 2px #fff;
     margin-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee{
+	0%{
+		transform: translateX(100%);
+	}
+
+	100%{
+		transform: translateX(-100%);
+	}
 }
 
 h1{
 	font-size: 90px;
 	font-family: "DM Serif Display", serif;
 	text-align: center;
-	color: white;
+	color: #ff1e00;
     margin-top: 110px;
 }
 
@@ -434,7 +526,131 @@ hr{
 
 /*Header*/
 
+	main{
+		width: 100%;
+	}
+	
+	form {
+		display: flex;
+	}	
+	
+	header{
+		height: 115vh;
+		width: 100vw;
+	}
 
+	h1{
+		font-size: 90px;
+		font-family: "DM Serif Display", serif;
+		text-align: center;
+		color: #ff1e00;
+		margin-top: -20px;
+	}
+
+	.ny-p{
+		margin-right: 8px;
+	  }
+
+	.lionmedia{
+		margin-left: -40px;
+		font-size: 40px;
+	}
+
+	.menu-top{
+		display: flex;
+		justify-content: space-between;
+	 	padding-top: 20px;
+	 	padding-left: 20px;
+	 	padding-right: 10px;
+	}
+
+	.menu-hvid{
+		background-color: #2b2b2b;
+		width: 25vw;
+	}
+
+	.fa-bars{
+		color: #fff;
+	}
+
+	.fa-magnifying-glass{
+		color: #fff;
+	}
+
+nav .mainmenu{
+	width: 100vw;
+}
+.kolonne {
+    display: grid;
+	grid-template-rows: 50% 50%;
+  }
+  .kolonne article { 
+	padding: 1em;
+	grid-row-start: 1;
+	width: 100%;
+	text-align: center;
+
+}
+.kolonne aside {
+	padding: 1em;
+	grid-row-start: 2;
+	width: 100%;
+	text-align: center;
+	margin-top: -150px;
+	margin-bottom: 40px;
+}	
+/*Main*/
+.first-line {
+   margin-left: 70px;
+   line-height: 1;
+   margin-bottom: 10px;
+}
+
+.second-line {
+	margin-left: 0px;
+}
+
+.info-tekst{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/*Kontaktformukar*/
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+.kontaktform {
+	width: 90%;
+	margin-left: 45px;
+  }
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.container article{
+	width: 100%;
+}
+
+.container aside {
+	width: 100%;
+}
+
+.checkbox{
+	margin-left: 45px;
+}
+
+textarea{
+	width: 100%;
+	margin-left: -20px;
+}
+
+button{
+	margin-right: 150px;
+}
 
 /*Footer*/
 
@@ -484,12 +700,47 @@ footer img{
 
 }
 
-
+/*Header*/
 /*ipad + op til 13 tommer computerskærm*/
 @media only screen and (min-width: 600px) and (max-width: 1200px){
+	main{
+		width: 100%;
+	}
+	
+	form {
+		display: flex;
+	}	
 
-/*Header*/
+	/*Header*/
+	
+	header{
+		height: auto;
+	}
 
+	header h1{
+		font-size: 45px;
+	}
+
+	.menu-top{
+		display: flex;
+		justify-content: space-between;
+	 	padding-top: 20px;
+	 	padding-left: 20px;
+	 	padding-right: 10px;
+	}
+
+	.menu-hvid{
+		background-color: #2b2b2b;
+		width: 18vw;
+	}
+
+	.fa-bars{
+		color: #fff;
+	}
+
+	.fa-magnifying-glass{
+		color: #fff;
+	}
 
 /*Footer*/
 

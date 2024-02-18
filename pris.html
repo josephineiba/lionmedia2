@@ -14,15 +14,32 @@
 </head>
 <body>
     <header>
-             <!-- menu linje -->
-             <div class="menu-top">
-                <img src="img/logooverskrift.png" alt="Lionmedia logo orange og hvid">
-                <p class="lionmedia">LionMedia</p>
-                    <div class="menu-hvid">
-                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #333232;"></i>
-                        <i class="fa-solid fa-bars fa-2xl" style="color: #333232;"></i>
-                    </div>
-            </div>
+            <nav>
+                <div class="menu-top">
+                    <img src="img/logooverskrift.png" alt="Lionmedia logo orange og hvid">
+                    <p class="lionmedia">LionMedia</p>
+                        <div class="menu-hvid">
+                            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                           <div class="openmenu"><i class="fa-solid fa-bars fa-2xl"></i></div>
+                        </div>
+                        
+                        <ul class="mainmenu">
+                            <li><a href="marketing.html">Marketing</a></li>
+                            <li><a href="#">Sociale medier</a></li>
+                            <li><a href="#">Webdesign</a></li>
+                            <li><a href="digitalstrategi.html">Digital strategi</a></li>
+                            <hr>
+                            <li><a href="cases-side.html">Cases</a></li>
+                            <li><a href="pris.html">Få en pris</a></li>
+                            <li><a href="omos.html">Om LionMedia</a></li>
+                            <div class="closemenu"><i class="fa-solid fa-xmark"></i></div>
+                            <span class="icons">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-tiktok"></i>
+                            </span>
+                        </ul>
+                </div>
+            </nav>
         
         <!--Overskrift og præsentation--> 
         <p class="rullende-tekst">Alt under ét tag</p>
@@ -99,9 +116,11 @@
             </aside>
                 </fieldset>
             </aside>
+
         </section>
 
-        <textarea id="besked" cols="80" rows="15" placeholder="Din forespørgsel..." required></textarea> <!--cols og rows definere størrelses på tekstboksen-->
+   <textarea id="besked" cols="80" rows="15" placeholder="Din forespørgsel..." required></textarea> 
+        <!--cols og rows definere størrelses på tekstboksen-->
 
             <h3>Hvor vil I kontaktes?</h3>
 
@@ -158,8 +177,8 @@
     
             <div class="kolonne3"> 
             <nav>
-                <li><a href="#">Cases</a></li>
-                <li><a href="#">Få en pris</a></li>
+                <li><a href="cases-side.html">Cases</a></li>
+                <li><a href="pris.html">Få en pris</a></li>
                 <li><a href="omos.html">Om Lionmedia</a></li>
             </nav>
             </div>        
@@ -175,5 +194,8 @@
       AOS.init();
     </script>    
 
+<script src="app.js"></script>
+
 </body>
 </html> 
+
