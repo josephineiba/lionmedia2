@@ -102,6 +102,10 @@ header {
     color: #2b2b2b;
 }
 
+.fa-check{
+	color: #ff1e00;
+}
+
 /* header tekst bokse + overskrifter */
 .rullende-tekst{ 		
     font-size: 20vh;
@@ -254,6 +258,19 @@ section img{
 	margin-right: 10px;
 }
 
+/* bordeaux boks på sociale medier siden */
+.plan-boks-socialemedier{
+	width: 100vw;
+	height: 100vh;
+	background-color: #680501;
+	margin-bottom: 100px;
+}
+
+.plan-boks-socialemedier img{
+max-width: 50%;
+height: auto;
+}
+
 /* Tidligere case - digital strategi side */
 .tidligere-case{
 	width: 100vw;
@@ -286,6 +303,11 @@ section img{
 
 .start-case{
 	font-size: 25px;
+}
+
+.greywolf-img{
+	max-width: 70%;
+	height: auto;
 }
 
 /*Kontaktform*/
