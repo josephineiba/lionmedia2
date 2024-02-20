@@ -28,7 +28,8 @@ img{
 	font-family: "DM Serif Display", serif;
 	text-align: left;
 	color: white;
-  
+	margin-left: -300px;
+	text-decoration: none;
     }
   
 	.menu-top{ 

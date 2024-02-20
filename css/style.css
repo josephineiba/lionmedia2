@@ -1,3 +1,21 @@
+/* ------------------------------------------------------------------------
+[Typografi]
+
+Overskrifter:	'DM Serif Display', serif;
+Brødtekst:		'Libre Caslon Text', serif;
+
+
+[Farve koder]
+
+Beige       #E6D4C3
+Bordeux     #680501
+Hvid        #fff
+Lysegrå     #D9D9D9
+Mørkegrå    #2b2b2b
+Orange      #ff1e00
+Sort        #000
+------------------------------------------------------------------------ */
+
 /*Generel styling*/
  
 * { /*alt på siden bliver påvirket*/
@@ -9,7 +27,7 @@ img{
 	max-width: 100%;
 }
 
-/*indhold header styling*/
+/*Header - øverste del*/
 header {
 	background-color: #2b2b2b;
 	height: 100vh;
@@ -44,25 +62,6 @@ header {
 	margin-left: 20px;
 	margin-top: 22px;
 	color: #333232;
-}
-
-.menu-telefon{
-	display: none;
-}
-
-.videocontainer {
-	display: flex;
-	justify-content: space-between; 
-}
-
-.video {
-	width: 50%; 
-	height: auto;
-}
-
-.frontimg {
-	width: 50%;
-	height: auto;
 }
 
 /*dropdown menu*/
@@ -143,6 +142,22 @@ nav .logo{
     }
 /*dropdown slut*/
 
+/*Header - nederneste del*/
+.videocontainer {
+	display: flex;
+	justify-content: space-between; 
+}
+
+.video {
+	width: 50%; 
+	height: auto;
+}
+
+.frontimg {
+	width: 50%;
+	height: auto;
+}
+
 /*services forside*/
 
 .service-overskrift{
@@ -202,29 +217,6 @@ font-family: 'Libre Caslon Text', serif;
 font-size: 20px;
 }
 
-.service-knap{
-	background-color: #ff1e00;
-	color: #fff;
-	font-family: "DM Serif Display", serif;
-	padding: 0.5em 0.5em;
-    padding-top: 2.5px;
-	border: none;
-	border-radius: 100px;
-    width: 50%;
-    height: 10%;
-	font-size: 25px;
-	font-weight: 600;
-	cursor: pointer;
-    margin-left: 25%;
-	margin-right: 25%;
-    margin-top: 40px;
-	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-}
-
-.service-knap button:hover{
-    background-color: #333232;
-    }
-
 .boks2{
     background-color: #E6D4C3;
     height: 400px;
@@ -280,27 +272,32 @@ font-size: 20px;
 	margin-top: 20px;
 }
 
-
-.knap-pris button {
+.service-knap{
 	background-color: #ff1e00;
 	color: #fff;
 	font-family: "DM Serif Display", serif;
 	padding: 0.5em 0.5em;
+    padding-top: 2.5px;
 	border: none;
+	text-decoration: none;
 	border-radius: 100px;
-	width: 15%;
+    width: 15%;
+    height: 10%;
 	font-size: 25px;
+	font-weight: 600;
 	cursor: pointer;
-	margin-top: 40px;
+    margin-left: 28%;
+	margin-right: 25%;
 	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
 }
 
-.knap-pris {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 40px;
-}
+.service-knap button:hover{
+    background-color: #333232;
+    }
 
+.pris-knap{
+	text-decoration: none;
+}
 
 /*tekst og overskrifter*/
 h1{
@@ -311,28 +308,27 @@ h1{
 }
 
 h3{
-	font-size: 40px;
+	font-size: 60px;
 	font-family: "DM Serif Display", serif;
 	text-align: center;
 	color: #333232; 
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 h4{
-	font-size: 60px;
-	font-family: "DM Serif Display", serif;
-	text-align: center;
-	color: #fff; 
-	margin-top: 30px;
-	margin-bottom: 50px;
+	font-size: 70px;
+    font-family: "DM Serif Display", serif;
+    text-align: center;
+    margin-left: 130px;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
-/*cases box*/
+/* Cases boks */
 .cases-tekst{
-	font-size: 60px;
-	font-family: "DM Serif Display", serif;
 	text-align: center;
-	color: #fff; 
+	color: #2b2b2b; 
 	margin-top: 30px;
 	margin-bottom: 50px;
 }
@@ -344,16 +340,101 @@ h4{
 	padding-bottom: 70px;
 }
 
+.case1, .case2, .case3{
+	transition: 1s;
+}
+
+.case1:hover, .case2:hover, .case3:hover{
+	transform:scale(1.1);
+	z-index: 2;
+}
+
 .case-img{
 	width: 70%;
 	height: auto;
 }
 
 .cases-box {
-	background-color: #333232;
+	background-color: #d9d9d9;
 	height: auto;
 	max-width: auto;
+	border-radius: 20px;
 }
+
+/*pop-up vinduer med cases*/
+.pop-up-section{
+	display: grid;
+	grid-template-columns: 5% 25% 65% 5%;
+	}
+	
+	.pop-up-article{
+		grid-column-start: 2;
+		margin-top: 30px;
+	}
+	
+	.pop-up-article img{
+		width: 100%;
+		margin-left: -30px;
+	}
+	
+	.pop-up-aside{
+		grid-column-start: 3;
+		margin-top: 20px;
+	}
+	
+	#popup1, #popup2, #popup3 {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		background-color: #2b2b2b;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		z-index: 1000;
+		width: 80vw;
+	  }
+	
+	.felt{
+		color: #ff1e00;
+		margin-left: 5px;
+		margin-bottom: 20px;
+		font-family: 'Libre Caslon Text', serif;	
+        font-size: 30px;
+	}
+	
+	.felt2{
+	margin-bottom: 30px;
+	margin-left: 5px;
+    line-height: 1.5;
+	color: #fff;
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 20px;	
+	}
+	
+	.greywolf-img{
+		margin-top: -70px;
+	}
+	
+    .web-img{
+        margin-top: 30px;
+    }
+
+	  /* Stil for at vise pop-up vinduet, når det har et id på target attributten */
+	  #popup1:target, #popup2:target, #popup3:target {
+		display: block;
+	  }
+	  
+	  /* Stil for linket */
+	  .luk {
+		text-decoration: none;
+		cursor: pointer;
+	  }
+	  
+	  /* Stil for at ændre linkets farve, når det er i hover-tilstand */
+	  .luk:hover {
+		color: #000000;
+	  }
 	
 /*Kontaktform*/
 
@@ -363,7 +444,8 @@ h4{
 	font-family: "DM Serif Display", serif;
 	display: flex;
    justify-content: left;
-   margin-left: 250px;
+   margin-left: 150px;
+   margin-bottom: -20px;
 }
 
 .second-line {
@@ -372,7 +454,7 @@ h4{
 	font-family: "DM Serif Display", serif;
     display: flex;
     justify-content: right;
-    margin-right: 150px;
+    margin-right: 130px;
 	margin-bottom: 10px;
 }
 
@@ -446,6 +528,7 @@ button {
 	margin: 0 auto;
 	margin-top: 40px;
 	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+	margin-bottom: 20px;
 }
 
 button:hover{

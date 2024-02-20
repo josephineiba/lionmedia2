@@ -72,9 +72,11 @@ header {
 	font-family: "DM Serif Display", serif;
 	text-align: left;
 	color: white;
-	margin-left: -200px;
+	margin-left: -300px;
+	text-decoration: none;
 }
 
+/* tekst LionMedia navn */
 .menu-top img {
     width: 100px; 
     height: auto; 
@@ -238,6 +240,7 @@ nav .mainmenu{
     color: #ffffff;
     line-height: 1.5;
     margin-top: 60px;
+	margin-bottom: 20px;
   }
 
 /* main indhold */
@@ -245,9 +248,9 @@ nav .mainmenu{
     color: #ff1e00;
 	display: flex;
   	justify-content: left;
-   margin-left: 15vw;
-   margin-top: 40px;
-   font-size: 80px;
+  	margin-left: 15vw;
+	margin-top: 40px;
+   	font-size: 80px;
 	line-height: 1;
 }
 
@@ -256,6 +259,46 @@ nav .mainmenu{
     display: flex;
     justify-content: right;
     margin-right: 15vw;
+	margin-bottom: 40px;
+	font-size: 80px;
+	line-height: 1;
+}
+
+.marketing-orange-h2{
+	color: #ff1e00;
+	display: flex;
+  	justify-content: left;
+  	margin-left: 22vw;
+	margin-top: 40px;
+   	font-size: 80px;
+	line-height: 1;
+}
+
+.marketing-grey-h2{
+	color: #2b2b2b;
+    display: flex;
+    justify-content: right;
+    margin-right: 22vw;
+	margin-bottom: 40px;
+	font-size: 80px;
+	line-height: 1;
+}
+
+.some-orange-h2 {
+	color: #ff1e00;
+	display: flex;
+  	justify-content: left;
+  	margin-left: 18vw;
+	margin-top: 40px;
+   	font-size: 80px;
+	line-height: 1;
+}
+
+.some-grey-h2 {
+	color: #2b2b2b;
+    display: flex;
+    justify-content: right;
+    margin-right: 18vw;
 	margin-bottom: 40px;
 	font-size: 80px;
 	line-height: 1;
@@ -368,6 +411,15 @@ section img{
 	font-family: "DM Serif Display", serif;
 	text-align: left;
 	color: #ff1e00;
+	margin-bottom: 50px;
+}
+
+.some-overskrift-p {
+	font-size: 30px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: #fff;
+	margin-bottom: 50px;
 }
   
 .punkt{
@@ -376,6 +428,16 @@ section img{
 	text-align: left;
 	color: #fff;
 	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+.digital-punkt{
+	font-size: 20px;
+    font-family: 'Libre Caslon Text', serif;	
+	text-align: left;
+	color: #000;
+	line-height: 1.5;
+	margin-bottom: 50px;
 }
 
 .fa-solid{
@@ -427,6 +489,7 @@ section img{
 .caseimg{
 	margin-left: 50px;
 	width: 30%;
+	margin-top: 60px;
 }
 
 .caseimg img{
