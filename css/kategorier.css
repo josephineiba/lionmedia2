@@ -37,7 +37,7 @@ h1{
 }
 
 h2{			
-	font-size: 90px; 
+	font-size: 80px; 
 	font-family: "DM Serif Display", serif;
 	text-align: center;
 	color: #fff;
@@ -106,14 +106,107 @@ header {
 	color: #ff1e00;
 }
 
+/*dropdown menu*/
+nav .mainmenu{
+	display: flex;
+	list-style: none;
+  }
+  
+  nav .mainmenu li a{
+	display: inline-block;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ff1e00;
+	font-size: 1.5rem;
+  }
+  
+  .mainmenu hr{
+	border-bottom: 2px solid #ff1e00;
+	margin: 20px;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	
+  }
+  nav .openmenu{
+	cursor: pointer;
+  }
+  
+  nav .mainmenu .closemenu , .icons i{
+	font-size: 2rem;
+	display: none;
+	cursor: pointer;
+	color: #ff1e00;
+  }
+  
+  .fa-tiktok:hover{color:rgb(99, 132, 243)}
+  .fa-instagram:hover{color:rgb(223, 55, 206)}
+  
+  nav .logo{
+	margin: 6px;
+	font-size: 25px;
+	cursor: pointer;
+  }
+  
+	nav .mainmenu{
+		height: 100vh;
+		width: 50vw;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #EDECEC;
+		transition: top 1s ease;
+		display: none;
+	}
+  
+	nav .mainmenu .closemenu{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+  
+	}
+   
+	nav .mainmenu li a:hover{
+		background: none;
+		color: #2b2b2b;
+		font-size: 1.6rem;
+	}
+  
+	.icons i{
+	   display: inline-block;
+	   padding: 12px;
+	}
+  /*dropdown slut*/
+
 /* header tekst bokse + overskrifter */
-.rullende-tekst{ 		
-    font-size: 20vh;
-	font-family: "DM Serif Display", serif;
-	color: white;
-    text-align: center;
-	margin-bottom: 100px;
-}
+.rullende-tekst{
+	font-size: 25vh;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  color: #2b2b2b;
+  -webkit-text-stroke: 2px #fff;
+	margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+  width: 200%;
+  }
+  
+  @keyframes marquee{
+  0%{
+	transform: translateX(100%);
+  }
+  
+  100%{
+	transform: translateX(-100%);
+  }
+  }
 
 .kolonner-header{
 	display: flex;
@@ -143,7 +236,7 @@ header {
     color: #ff1e00;
 	display: flex;
   	justify-content: left;
-   margin-left: 23vw;
+   margin-left: 15vw;
    margin-top: 40px;
    font-size: 80px;
 	line-height: 1;
@@ -153,14 +246,14 @@ header {
     color: #2b2b2b;
     display: flex;
     justify-content: right;
-    margin-right: 23vw;
+    margin-right: 15vw;
 	margin-bottom: 40px;
 	font-size: 80px;
 	line-height: 1;
 }
 
 /* "Det får i bokse" styling og indhold*/
-.lightgrey-box, .darkgrey-box{
+.lightgrey-box, .darkgrey-box, .beige-box{
     width: 96vw;
 	height: 60vh;
 	margin-left: 30px;
@@ -179,7 +272,11 @@ header {
 	background-color: #2b2b2b;
 }
 
-.lightgreybox-columns, .darkgreybox-columns{
+.beige-box{
+	background-color: #e6d4c3;
+}
+
+.lightgreybox-columns, .darkgreybox-columns, .beige-columns{
 	display: flex;
 	justify-content: space-between;
 }
@@ -203,9 +300,8 @@ header {
 /* strategi og plan bokse */
 .plan-boks{
     width: 100vw;
-	height: 100vh;
+	height: 150vh;
 	background-color: #2b2b2b;
-	margin-bottom: 100px;
 }
 
 .strategi-boks{
@@ -232,6 +328,7 @@ section{
 aside{
 	margin-right: 50px;
 	width: 60%;
+	margin-bottom: 100px;
 }
 
 section img{
@@ -261,14 +358,17 @@ section img{
 /* bordeaux boks på sociale medier siden */
 .plan-boks-socialemedier{
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	background-color: #680501;
 	margin-bottom: 100px;
 }
 
 .plan-boks-socialemedier img{
-max-width: 50%;
-height: auto;
+	max-width: 45%;
+	height: auto;
+	margin-left: 70px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 /* Tidligere case - digital strategi side */
@@ -299,6 +399,7 @@ height: auto;
 	color: #fff;
 	margin-top: 60px;
 	font-size: 20px;
+	line-height: 1.5;
 }
 
 .start-case{
@@ -306,8 +407,9 @@ height: auto;
 }
 
 .greywolf-img{
-	max-width: 70%;
+	max-width: 100%;
 	height: auto;
+	margin-bottom: 50px;
 }
 
 /*Kontaktform*/
@@ -488,8 +590,8 @@ hr{
 }
 
 h1{
-    font-size: 100px;
-    margin-left: 10px;
+    font-size: 90px;
+    margin-left: 15px;
     margin-top: 0px;
 }
 
