@@ -1,3 +1,20 @@
+/* ------------------------------------------------------------------------
+[Typografi]
+
+Overskrifter:	'DM Serif Display', serif;
+Brødtekst:		'Libre Caslon Text', serif;
+
+
+[Farve koder]
+
+Beige       #E6D4C3
+Bordeux     #680501
+Hvid        #fff
+Mørkegrå    #2b2b2b
+Orange      #ff1e00
+Sort        #000
+------------------------------------------------------------------------ */
+
 /*Generel styling*/
  
 * { /*alt på siden bliver påvirket*/
@@ -7,11 +24,29 @@
 
 header {
 	background-color: #2b2b2b;
-	height: 100vh;
+	height: 105vh;
 	max-width: auto;
 }
 
-/* header */
+/* Generelt styling af overskrifter */
+h1{
+	font-size: 90px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #ff1e00;
+  margin-top: 110px;
+}
+
+h2{
+  font-size: 60px;
+  font-family: "DM Serif Display", serif;
+  color: #ff1e00;
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+/* header øverste del */
 .menu-top {
   display: flex;
   justify-content: space-between;
@@ -53,14 +88,6 @@ display: flex;
 justify-content: left;
 margin-left: 20px;
 margin-top: 22px;
-}
-
-h1{
-	font-size: 90px;
-	font-family: "DM Serif Display", serif;
-	text-align: center;
-	color: #ff1e00;
-  margin-top: 110px;
 }
 
 /*dropdown menu*/
@@ -141,7 +168,32 @@ nav .logo{
   }
 /*dropdown slut*/
 
-/*Om os præsentation*/
+/*Header nederstedel video og punktopstilling*/
+
+/*tekst og overskrifter*/
+
+.rullende-tekst{
+  font-size: 25vh;
+font-family: "DM Serif Display", serif;
+text-align: center;
+color: #2b2b2b;
+-webkit-text-stroke: 2px #fff;
+  margin-top: 20px;
+white-space: nowrap;
+overflow: hidden;
+animation: marquee 15s linear infinite;
+width: 200%;
+}
+
+@keyframes marquee{
+0%{
+  transform: translateX(100%);
+}
+
+100%{
+  transform: translateX(-100%);
+}
+}
 
 .kolonne {
   display: flex;
@@ -170,31 +222,7 @@ nav .logo{
   color: #ffffff;
   line-height: 1.5;
   margin-top: 80px;
-}
-
-/*tekst og overskrifter*/
-
-.rullende-tekst{
-  font-size: 25vh;
-font-family: "DM Serif Display", serif;
-text-align: center;
-color: #2b2b2b;
--webkit-text-stroke: 2px #fff;
-  margin-top: 20px;
-white-space: nowrap;
-overflow: hidden;
-animation: marquee 15s linear infinite;
-width: 200%;
-}
-
-@keyframes marquee{
-0%{
-  transform: translateX(100%);
-}
-
-100%{
-  transform: translateX(-100%);
-}
+  margin-bottom: 40px;
 }
 
 /*video*/
@@ -264,41 +292,13 @@ width: 200%;
     margin-right: 100px;
 }
 
-  .customh4 {
+  .customh2 {
     font-size: 60px;
 	  font-family: "DM Serif Display", serif;
 	  text-align: center;
 	  color:#2b2b2b; 
     margin-top: -15px;
     margin-left: 500px;
-}
-
-  /*services forside*/
-
-.knap-pris button {
-	background-color: #ff1e00;
-	color: #fff;
-	font-family: "DM Serif Display", serif;
-	padding: 0.5em 0.5em;
-	border: none;
-	border-radius: 100px;
-	width: 15%;
-	font-size: 25px;
-	cursor: pointer;
-	margin-top: 40px;
-	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-}
-
-.knap-pris {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 40px;
-}
-
-.knap-container{
-	width: 10%;
-	font-size: 20px;
-	margin-left: 70px;
 }
 
 /* mørkegrå boks - hvem er vi */
@@ -353,7 +353,35 @@ width: 200%;
   margin-top: -5px;
 }
 
-/*services forside*/
+
+  /*services - dette tilbyder vi*/
+
+.pris-knap button {
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 0.5em;
+	border: none;
+	border-radius: 100px;
+	width: 15%;
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 40px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+.pris-knap {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.knap-container{
+	width: 10%;
+	font-size: 20px;
+	margin-left: 70px;
+}
 
 .service-overskrift{
 	font-size: 60px;
@@ -419,15 +447,15 @@ font-size: 20px;
 	padding: 0.5em 0.5em;
     padding-top: 2.5px;
 	border: none;
+	text-decoration: none;
 	border-radius: 100px;
-    width: 50%;
+    width: 15%;
     height: 10%;
 	font-size: 25px;
 	font-weight: 600;
 	cursor: pointer;
-    margin-left: 25%;
+    margin-left: 28%;
 	margin-right: 25%;
-    margin-top: 40px;
 	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
 }
 
@@ -489,28 +517,6 @@ font-size: 20px;
 	color: #333232; 
 	margin-top: 20px;
 }
-
-
-.knap-pris button {
-	background-color: #ff1e00;
-	color: #fff;
-	font-family: "DM Serif Display", serif;
-	padding: 0.5em 0.5em;
-	border: none;
-	border-radius: 100px;
-	width: 15%;
-	font-size: 25px;
-	cursor: pointer;
-	margin-top: 40px;
-	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-}
-
-.knap-pris {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 40px;
-}
-
 
 /*footer*/
 footer {
