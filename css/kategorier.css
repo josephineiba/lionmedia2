@@ -51,6 +51,13 @@ h3 {
 	padding-bottom: 9vh;
 }
 
+h4{
+	font-size: 40px;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: #fff;
+}
+
 /*indhold header*/
 header {
 	background-color: #2b2b2b;
@@ -389,12 +396,26 @@ section img{
 	margin-bottom: 30px;
 }
 
-/* Tidligere case - digital strategi side */
+/* Tidligere cases*/
 .tidligere-case{
 	width: 100vw;
 	max-height :auto;
 	background-color: #2b2b2b;
 	margin-bottom: 100px;
+}
+
+.tidligere-case-web{
+	width: 100vw;
+	max-height :auto;
+	background-color: #D9D9D9;
+	margin-bottom: 100px;
+}
+
+.caseh2{
+	font-size: 80px; 
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #000;
 }
 
 .kolonne-case{
@@ -420,6 +441,15 @@ section img{
 	line-height: 1.5;
 }
 
+.beskrivelse-web{
+	margin-right: 50px;
+	width: 70%;
+	color: #000;
+	margin-top: 60px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
 .start-case{
 	font-size: 25px;
 }
@@ -433,6 +463,9 @@ section img{
 .greywolfmobil-img{
 	width: 500px;
 }
+
+/* process-boks */
+
 
 /*Kontaktform*/
 
