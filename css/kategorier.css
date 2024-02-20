@@ -60,7 +60,68 @@ h4{
 	margin-right: 20px;
 }
 
-/*indhold header*/
+/* Overskrifter med 2 farver*/
+.orange-h2 {
+    color: #ff1e00;
+	display: flex;
+  	justify-content: left;
+  	margin-left: 15vw;
+	margin-top: 40px;
+   	font-size: 80px;
+	line-height: 1;
+}
+
+.grey-h2 {
+    color: #2b2b2b;
+    display: flex;
+    justify-content: right;
+    margin-right: 15vw;
+	margin-bottom: 40px;
+	font-size: 80px;
+	line-height: 1;
+}
+
+.marketing-orange-h2{
+	color: #ff1e00;
+	display: flex;
+  	justify-content: left;
+  	margin-left: 22vw;
+	margin-top: 40px;
+   	font-size: 80px;
+	line-height: 1;
+}
+
+.marketing-grey-h2{
+	color: #2b2b2b;
+    display: flex;
+    justify-content: right;
+    margin-right: 22vw;
+	margin-bottom: 40px;
+	font-size: 80px;
+	line-height: 1;
+}
+
+.some-orange-h2 {
+	color: #ff1e00;
+	display: flex;
+  	justify-content: left;
+  	margin-left: 18vw;
+	margin-top: 40px;
+   	font-size: 80px;
+	line-height: 1;
+}
+
+.some-grey-h2 {
+	color: #2b2b2b;
+    display: flex;
+    justify-content: right;
+    margin-right: 18vw;
+	margin-bottom: 40px;
+	font-size: 80px;
+	line-height: 1;
+}
+
+/*indhold header øverste del*/
 header {
 	background-color: #2b2b2b;
 	height: 100vh;
@@ -76,7 +137,6 @@ header {
 	text-decoration: none;
 }
 
-/* tekst LionMedia navn */
 .menu-top img {
     width: 100px; 
     height: auto; 
@@ -195,7 +255,7 @@ nav .mainmenu{
 	}
   /*dropdown slut*/
 
-/* header tekst bokse + overskrifter */
+/* Header indhold nederste del */
 .rullende-tekst{
 	font-size: 25vh;
   font-family: "DM Serif Display", serif;
@@ -243,66 +303,8 @@ nav .mainmenu{
 	margin-bottom: 20px;
   }
 
-/* main indhold */
-.orange-h2 {
-    color: #ff1e00;
-	display: flex;
-  	justify-content: left;
-  	margin-left: 15vw;
-	margin-top: 40px;
-   	font-size: 80px;
-	line-height: 1;
-}
 
-.grey-h2 {
-    color: #2b2b2b;
-    display: flex;
-    justify-content: right;
-    margin-right: 15vw;
-	margin-bottom: 40px;
-	font-size: 80px;
-	line-height: 1;
-}
-
-.marketing-orange-h2{
-	color: #ff1e00;
-	display: flex;
-  	justify-content: left;
-  	margin-left: 22vw;
-	margin-top: 40px;
-   	font-size: 80px;
-	line-height: 1;
-}
-
-.marketing-grey-h2{
-	color: #2b2b2b;
-    display: flex;
-    justify-content: right;
-    margin-right: 22vw;
-	margin-bottom: 40px;
-	font-size: 80px;
-	line-height: 1;
-}
-
-.some-orange-h2 {
-	color: #ff1e00;
-	display: flex;
-  	justify-content: left;
-  	margin-left: 18vw;
-	margin-top: 40px;
-   	font-size: 80px;
-	line-height: 1;
-}
-
-.some-grey-h2 {
-	color: #2b2b2b;
-    display: flex;
-    justify-content: right;
-    margin-right: 18vw;
-	margin-bottom: 40px;
-	font-size: 80px;
-	line-height: 1;
-}
+/* Main indhold*/
 
 /* "Det får i bokse" styling og indhold*/
 .lightgrey-box, .darkgrey-box, .beige-box, .bordeaux-box{
@@ -376,6 +378,21 @@ nav .mainmenu{
 	margin-bottom: 100px;
 }
 
+.plan-boks-socialemedier{
+	width: 100vw;
+	height: 110vh;
+	background-color: #680501;
+	margin-bottom: 100px;
+}
+
+.plan-boks-socialemedier img{
+	max-width: 45%;
+	height: auto;
+	margin-left: 70px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
 .strategi-boks h2{
 	color: #2b2b2b;
 	margin-bottom: 30px;
@@ -442,22 +459,6 @@ section img{
 
 .fa-solid{
 	margin-right: 10px;
-}
-
-/* bordeaux boks på sociale medier siden */
-.plan-boks-socialemedier{
-	width: 100vw;
-	height: 110vh;
-	background-color: #680501;
-	margin-bottom: 100px;
-}
-
-.plan-boks-socialemedier img{
-	max-width: 45%;
-	height: auto;
-	margin-left: 70px;
-	margin-top: 30px;
-	margin-bottom: 30px;
 }
 
 /* Tidligere cases*/
@@ -529,7 +530,7 @@ section img{
 	width: 500px;
 }
 
-/* process-boks */
+/* process-boks webdesign*/
 .process-boks {
     background-color: #2b2b2b;
     color: #fff; 
