@@ -630,14 +630,14 @@ form {
 }	
 
 header{
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
 }
 
 h1{
   font-size: 60px;
-  margin-top: -20px;
-  margin-bottom: -40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .ny-p{
@@ -668,6 +668,10 @@ h1{
 
 .fa-magnifying-glass{
   color: #fff;
+}
+
+.rullende-tekst{
+  display: none;
 }
 
 nav .mainmenu{
@@ -775,31 +779,24 @@ margin-bottom: 20px;
   margin-top: 45px;
 }
 
+.sectionvideo{
+  margin-bottom: 50px;
+  padding-top: 5px;
+}
 
 h2{
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 55px;
-}
-
-.pris-knap {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.pris-knap button {
-  background-color: #ff1e00;
-  color: #fff;
-  font-family: "DM Serif Display", serif;
-  padding: 0.5em 0.5em;
-  border: none;
-  border-radius: 100px;
-  width: 100%;
-  font-size: 25px;
-  cursor: pointer;
-  margin-top: 40px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+.customh2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
 }
 
 /*Footer*/
@@ -946,25 +943,6 @@ h1{
 		font-size: 55px;
 	}
 
-	.knap-pris {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 40px;
-	}
-
-	.knap-pris button {
-		background-color: #ff1e00;
-		color: #fff;
-		font-family: "DM Serif Display", serif;
-		padding: 0.5em 0.5em;
-		border: none;
-		border-radius: 100px;
-		width: 30%;
-		font-size: 25px;
-		cursor: pointer;
-		margin-top: 40px;
-		box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-	}
 
 
   /*Footer*/

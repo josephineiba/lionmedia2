@@ -204,6 +204,10 @@ aside{
 	font-size: 60px;
 }
 
+.caseimg{
+    display: none;
+}
+
 /* proces boks */
 .process-boks {
     display: flex;
