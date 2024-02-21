@@ -1,43 +1,70 @@
 @media only screen and (max-width: 600px) {
-    header{
-        height: auto;
-    }
-   
-    .menu-top{
-        display: flex;
-        justify-content: space-between;
-         padding-top: 20px;
-         padding-left: 20px;
-         padding-right: 10px;
-    }
-    
-    .menu-hvid{
-        background-color: #2b2b2b;
-        width: 25vw;
-    }
-    
-    .fa-bars{
-        color: #fff;
-    }
-    
-    .fa-magnifying-glass{
-        color: #fff;
+
+    /* dropdown menu*/
+    nav .mainmenu{
+        width: 100vw;
     }
 
-.rullende-tekst{
-    font-size: 90px;
-}
-
-h1{
+    /*Header*/
+  form {
+    display: flex;
+  }	
+  
+  header{
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  h1{
     font-size: 100px;
-    margin-left: 10px;
-    margin-top: 0px;
+    padding-top: 80px;
+    margin-bottom: -40px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+.kolonner-header aside{
+	width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .p-header{
-    font-size: 20px;
-    margin-top: 0px;
-}
+    font-size: 30px;
+	margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  
+  .lionmedia{
+    margin-left: -40px;
+    font-size: 40px;
+  }
+  
+  .menu-top{
+    display: flex;
+    justify-content: space-between;
+     padding-top: 20px;
+     padding-left: 20px;
+     padding-right: 10px;
+  }
+  
+  .menu-hvid{
+    background-color: #2b2b2b;
+    width: 25vw;
+  }
+  
+  .fa-bars{
+    color: #fff;
+  }
+  
+  .fa-magnifying-glass{
+    color: #fff;
+  }
+
+  .rullende-tekst{
+    display: none;
+  }
 
 /* header tekst kolonner */
 
@@ -54,30 +81,79 @@ h1{
     grid-row-start: 2;
 }
 
-/* lysegrå boks */
-.orange-h2, .grey-h2{
+/* det får i bokse */
+.orange-h2, .grey-h2, .process-orange-h2, .process-grey-h2{
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.lightgrey-box{
+.marketing-orange-h2, .some-orange-h2{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+} 
+
+.marketing-grey-h2, .some-grey-h2{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.lightgrey-box, .darkgrey-box, .bordeaux-box, .beige-box{
     width: 90vw;
+    height: auto;
+    padding-left: 20vw;
+	padding-right: 10vw;
+    margin-left: 25px;
+}
+
+.lightgreybox-columns, .darkgreybox-columns, .bordeaux-columns, .beige-columns{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.text-column1{
+    grid-row-start: 1;
+    margin-bottom: 20px;
+}
+
+.text-column2{
+    grid-row-start: 2;
+    margin-top: 20px;
+}
+
+.bordeaux-box {
+	padding-bottom: 50px;
 }
 
 /* Mørkegrå boks */
-.plan-boks{
+.plan-boks, .strategi-boks, .plan-boks-socialemedier{
     height: auto;
-    background-color: #2b2b2b;
-    padding-bottom: 50px;
+    width: 100vw;
     padding-top: 50px;
 }
 
 h2{
-    font-size: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.overskrift-p{
-    display: flex;
-    justify-content: center;
+.overskrift-p, .some-overskrift-p{
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+.punkt, .digital-punkt{
+    text-align: left;
+    margin-left: 60px;
 }
 
 .kolonner-plan{
@@ -86,12 +162,44 @@ h2{
 
 .kolonner-plan section {
     display: none;
-
 }
 
 aside{
     width: 90%;  
     justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* tidligere case */
+.kolonne-case{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.kolonne-case aside{
+    grid-row-start: 1;
+    width: 90%;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.beskrivelse{
+	margin-top: 40px;
+	font-size: 22px;
+}
+
+.start-case{
+    font-size: 35px;
+}
+
+.kolonne-case section{
+    grid-row-start: 2;
+}
+
+/* tidligere case webdesign */
+.caseh2{
+	font-size: 60px;
 }
 
 /* Kontakt form */

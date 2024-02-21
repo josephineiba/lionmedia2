@@ -178,11 +178,6 @@ header {
 }
 
 /*dropdown menu*/
-nav .mainmenu{
-	display: flex;
-	list-style: none;
-  }
-  
   nav .mainmenu li a{
 	display: inline-block;
 	padding: 15px;
@@ -204,7 +199,7 @@ nav .mainmenu{
 	cursor: pointer;
   }
   
-  nav .mainmenu .closemenu , .icons i{
+  nav .mainmenu .closemenu, .icons i{
 	font-size: 2rem;
 	display: none;
 	cursor: pointer;
@@ -221,6 +216,8 @@ nav .mainmenu{
   }
   
 	nav .mainmenu{
+		display: flex;
+	list-style: none;
 		height: 100vh;
 		width: 50vw;
 		position: fixed;
@@ -520,10 +517,8 @@ section img{
 	font-size: 25px;
 }
 
-.greywolf-img{
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 50px;
+.caseimg img{
+	display: none;
 }
 
 .greywolfmobil-img{
