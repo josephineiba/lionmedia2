@@ -19,14 +19,12 @@
     font-size: 95px;
     padding-top: 80px;
     margin-bottom: -40px;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-right: 5px;
+    margin-top: 0px;
   }
-  
-.kolonner-header aside{
-	width: 100%;
-    margin-left: 20px;
-}
+
+
 
 .p-header{
     font-size: 30px;
@@ -34,6 +32,7 @@
     margin-top: 20px;
     margin-right: 30px;
   }
+
   
   .lionmedia{
     margin-left: -40px;
@@ -44,6 +43,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
   
   .menu-hvid{
@@ -76,7 +77,10 @@
 
 .kolonner-header aside {
     grid-row-start: 2;
+    width: 100%;
+    margin-left: 20px;
 }
+	
 
 /* det får i bokse */
 .orange-h2, .grey-h2, .process-orange-h2, .process-grey-h2{
@@ -140,6 +144,7 @@
 h2{
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 50px;
 }
 
 .overskrift-p, .some-overskrift-p{
