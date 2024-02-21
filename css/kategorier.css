@@ -517,8 +517,8 @@ section img{
 	font-size: 25px;
 }
 
-.caseimg img{
-	display: none;
+.caseimg{
+	margin-bottom: 40px;
 }
 
 .greywolfmobil-img{
