@@ -356,32 +356,59 @@ width: 200%;
 
   /*services - dette tilbyder vi*/
 
-.pris-knap button {
-	background-color: #ff1e00;
-	color: #fff;
-	font-family: "DM Serif Display", serif;
-	padding: 0.5em 0.5em;
-	border: none;
-	border-radius: 100px;
-	width: 15%;
-	font-size: 25px;
-	cursor: pointer;
-	margin-top: 40px;
-	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-}
-
-.pris-knap {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 40px;
-  text-decoration: none;
-}
-
-.knap-container{
-	width: 10%;
+  .service-knap{
+    background-color: #ff1e00;
+    font-family: "DM Serif Display", serif;
 	font-size: 20px;
-	margin-left: 70px;
-}
+    padding: 0.5em 0.5em;
+      padding-top: 2.5px;
+    border: none;
+    border-radius: 100px;
+      width: 50%;
+      height: 10%;
+    font-weight: 600;
+    cursor: pointer;
+      margin-left: 25%;
+    margin-right: 25%;
+      margin-top: 40px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+  }
+  
+  .service-knap button:hover{
+      background-color: #333232;
+      }
+  
+  .service-knap a, .pris-knap a{
+      text-decoration: none;
+      color: #fff;
+    }
+  
+  .pris-knap{
+    text-decoration: none;
+    width: 15%;
+  }
+
+  button {
+    background-color: #ff1e00;
+    color: #fff;
+    font-family: "DM Serif Display", serif;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 100px;
+    width: 25%;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  button:hover{
+  background-color: #333232;
+  }
 
 .service-overskrift{
 	font-size: 60px;
@@ -439,29 +466,6 @@ line-height: 2;
 font-family: 'Libre Caslon Text', serif;
 font-size: 20px;
 }
-
-.service-knap{
-	background-color: #ff1e00;
-	color: #fff;
-	font-family: "DM Serif Display", serif;
-	padding: 0.5em 0.5em;
-    padding-top: 2.5px;
-	border: none;
-	text-decoration: none;
-	border-radius: 100px;
-    width: 15%;
-    height: 10%;
-	font-size: 25px;
-	font-weight: 600;
-	cursor: pointer;
-    margin-left: 28%;
-	margin-right: 25%;
-	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-}
-
-.service-knap button:hover{
-    background-color: #333232;
-    }
 
 .serviceboks2{
     background-color: #E6D4C3;
@@ -771,9 +775,6 @@ margin-bottom: 20px;
   margin-top: 45px;
 }
 
-.knap-container{
-  display: none;
-}
 
 h2{
   margin-bottom: 20px;
@@ -781,26 +782,25 @@ h2{
   font-size: 55px;
 }
 
-.knap-pris {
+.pris-knap {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 
-.knap-pris button {
+.pris-knap button {
   background-color: #ff1e00;
   color: #fff;
   font-family: "DM Serif Display", serif;
   padding: 0.5em 0.5em;
   border: none;
   border-radius: 100px;
-  width: 30%;
+  width: 100%;
   font-size: 25px;
   cursor: pointer;
   margin-top: 40px;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
 }
-
 
 /*Footer*/
 

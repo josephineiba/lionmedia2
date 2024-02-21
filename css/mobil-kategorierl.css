@@ -1,0 +1,147 @@
+@media only screen and (max-width: 600px) {
+    header{
+        height: auto;
+    }
+   
+    .menu-top{
+        display: flex;
+        justify-content: space-between;
+         padding-top: 20px;
+         padding-left: 20px;
+         padding-right: 10px;
+    }
+    
+    .menu-hvid{
+        background-color: #2b2b2b;
+        width: 25vw;
+    }
+    
+    .fa-bars{
+        color: #fff;
+    }
+    
+    .fa-magnifying-glass{
+        color: #fff;
+    }
+
+.rullende-tekst{
+    font-size: 90px;
+}
+
+h1{
+    font-size: 100px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.p-header{
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+/* header tekst kolonner */
+
+.kolonner-header{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.kolonner-header section{
+    grid-row-start: 1;
+}
+
+.kolonner-header aside {
+    grid-row-start: 2;
+}
+
+/* lysegrå boks */
+.orange-h2, .grey-h2{
+    font-size: 50px;
+}
+
+.lightgrey-box{
+    width: 90vw;
+}
+
+/* Mørkegrå boks */
+.plan-boks{
+    height: auto;
+    background-color: #2b2b2b;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.overskrift-p{
+    display: flex;
+    justify-content: center;
+}
+
+.kolonner-plan{
+    flex-direction: row;
+}
+
+.kolonner-plan section {
+    display: none;
+
+}
+
+aside{
+    width: 90%;  
+    justify-content: center;
+}
+
+/* Kontakt form */
+.kontakt-overskrift{
+    font-size: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+button{
+    width: 80%;
+}
+
+
+/*Footer*/
+
+    footer{
+	height: auto;
+}
+
+    footer img{
+	max-width: 50%;
+	height: auto;
+	margin-left: 25vw;
+}
+
+    .kolonner{
+	display: flex;
+	flex-direction: column;
+}
+
+    .kolonne1{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+
+    .kolonne2, .kolonne3{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+    .kolonne1 p{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+    
+}
