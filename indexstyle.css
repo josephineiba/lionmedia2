@@ -394,11 +394,6 @@ form .container input[type=text], form .container input[type=email], form .conta
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
-form .container textarea {
-  display: flex;
-  justify-content: right;
-  border-radius: 20px;
-}
 form .cirkel-container {
   display: flex;
   justify-content: center;
@@ -514,15 +509,26 @@ hr {
   main {
     width: 100%;
   }
-  form {
-    display: flex;
-  }
   /*Header*/
   header {
     height: auto;
   }
-  header h1 {
-    font-size: 40px;
+  header .videocontainer {
+    display: grid;
+    grid-template-rows: 50% 50%;
+  }
+  header .video {
+    width: 90%;
+    height: auto;
+    grid-template-rows: 2;
+    margin-left: 43px;
+    margin-top: -50px;
+  }
+  header .frontimg {
+    width: 100%;
+    height: auto;
+    grid-template-rows: 1;
+    margin-top: -75px;
   }
   .menu-top {
     display: flex;
@@ -541,23 +547,6 @@ hr {
   .fa-magnifying-glass {
     color: #fff;
   }
-  .videocontainer {
-    display: grid;
-    grid-template-rows: 50% 50%;
-  }
-  .video {
-    width: 90%;
-    height: auto;
-    grid-template-rows: 2;
-    margin-left: 43px;
-    margin-top: -50px;
-  }
-  .frontimg {
-    width: 100%;
-    height: auto;
-    grid-template-rows: 1;
-    margin-top: -75px;
-  }
   /*services*/
   .bokscontainer {
     display: grid;
@@ -565,13 +554,13 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .boks1, .boks2, .boks3, .boks4 {
+  .bokscontainer .boks1, .bokscontainer .boks2, .bokscontainer .boks3, .bokscontainer .boks4 {
     width: 80vw;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .service-knap {
+  .bokscontainer .service-knap {
     margin-top: 45px;
   }
   h2 {
@@ -583,60 +572,49 @@ hr {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-  }
-  .pris-knap button {
-    background-color: #ff1e00;
-    color: #fff;
-    font-family: "DM Serif Display", serif;
-    padding: 0.5em 0.5em;
-    border: none;
-    border-radius: 100px;
-    width: 30%;
-    font-size: 25px;
-    cursor: pointer;
-    margin-top: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 50%;
   }
   /*cases*/
   h4 {
     margin-top: -5px;
   }
-  .case-img {
-    width: 100%;
-    height: auto;
-  }
-  .cases-billeder {
+  .cases-box .cases-billeder {
     display: flex;
     justify-content: space-evenly;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 70px;
   }
+  .cases-box .cases-billeder img {
+    width: 100%;
+    height: auto;
+  }
   /*kontakt skema*/
-  .first-line {
-    color: #ff1e00;
-    display: flex;
-    justify-content: left;
-    margin-left: -100px;
+  .kontaktform {
+    width: 90%;
   }
-  .second-line {
-    color: #333232;
+  .kontaktform .first-line {
     display: flex;
-    justify-content: right;
-    margin-right: -100px;
+    justify-content: center;
+    margin: 0 0;
   }
-  form {
+  .kontaktform .second-line {
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+  }
+  form .container {
     display: grid;
     grid-template-rows: 50% 50%;
   }
-  .left {
+  form .container .left {
     grid-row-start: 1;
   }
-  .right {
+  form .container .right {
     grid-row-start: 2;
   }
   button {
-    width: 50%;
+    width: 80%;
   }
   /*Footer*/
   footer {
@@ -656,6 +634,11 @@ hr {
     width: 100%;
     text-align: center;
   }
+  .kolonne1 p {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
   .kolonne2 {
     box-sizing: border-box;
     width: 100%;
@@ -669,11 +652,6 @@ hr {
   }
   .tiktok {
     max-width: 20%;
-  }
-  .kolonne1 p {
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
   }
 }
 /*ipad + op til 13 tommer computerskærm*/
@@ -715,7 +693,7 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .boks1, .boks2, .boks3, .boks4 {
+  .bokscontainer .boks1, .bokscontainer .boks2, .bokscontainer .boks3, .bokscontainer .boks4 {
     width: 45vw;
     height: auto;
     margin-top: 20px;
@@ -732,12 +710,13 @@ hr {
     margin-top: 20px;
     font-size: 55px;
   }
-  .knap-pris {
+  .pris-knap {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    width: 50%;
   }
-  .knap-pris button {
+  .pris-knap button {
     background-color: #ff1e00;
     color: #fff;
     font-family: "DM Serif Display", serif;
@@ -754,16 +733,16 @@ hr {
   h4 {
     margin-top: -5px;
   }
-  .case-img {
-    width: 100%;
-    height: auto;
-  }
-  .cases-billeder {
+  .cases-box .cases-billeder {
     display: flex;
     justify-content: space-evenly;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 70px;
+  }
+  .cases-box .cases-billeder img {
+    width: 100%;
+    height: auto;
   }
   /*kontakt skema*/
   .first-line {

@@ -436,12 +436,6 @@ nav{
             margin-top: 0.5em;
             margin-bottom: 1em;
         }
-        
-        textarea {
-            display: flex;
-            justify-content: right;
-            border-radius: 20px;
-        }
     }
 
     .cirkel-container{
@@ -572,21 +566,33 @@ hr{
 	main{
 		width: 100%;
 	}
-	
-	form {
-		display: flex;
-	}	
 
 	/*Header*/
 	
 	header{
 		height: auto;
+
+        .videocontainer {
+            display: grid;
+            grid-template-rows: 50% 50%;
+        }
+        
+        .video {
+            width: 90%; 
+            height: auto;
+            grid-template-rows: 2;
+            margin-left: 43px;
+            margin-top: -50px;
+        }
+        
+        .frontimg {
+            width: 100%;
+            height: auto;
+            grid-template-rows: 1;
+            margin-top: -75px;
+        }
 	}
 	
-	header h1{
-		font-size: 40px;
-	}
-
 	.menu-top{
 		display: flex;
 		justify-content: space-between;
@@ -608,25 +614,6 @@ hr{
 		color: #fff;
 	}
 
-	.videocontainer {
-		display: grid;
-		grid-template-rows: 50% 50%;
-	}
-	
-	.video {
-		width: 90%; 
-		height: auto;
-		grid-template-rows: 2;
-		margin-left: 43px;
-		margin-top: -50px;
-	}
-	
-	.frontimg {
-		width: 100%;
-		height: auto;
-		grid-template-rows: 1;
-		margin-top: -75px;
-	}
 
 /*services*/
 
@@ -635,18 +622,19 @@ hr{
 		grid-template-rows: 25% 25% 25% 25%;
 		margin-left: 20px;
 		margin-right: 20px;
+
+        .boks1, .boks2, .boks3, .boks4 {
+            width: 80vw;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .service-knap{
+            margin-top: 45px;
+        }
+
 	  }
-
-	.boks1, .boks2, .boks3, .boks4 {
-		width: 80vw;
-		height: auto;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	.service-knap{
-		margin-top: 45px;
-	}
 
 	h2{
 		margin-bottom: 20px;
@@ -658,20 +646,7 @@ hr{
 		display: flex;
 		justify-content: center;
 		margin-bottom: 40px;
-	}
-
-	.pris-knap button {
-		background-color: #ff1e00;
-		color: #fff;
-		font-family: "DM Serif Display", serif;
-		padding: 0.5em 0.5em;
-		border: none;
-		border-radius: 100px;
-		width: 30%;
-		font-size: 25px;
-		cursor: pointer;
-		margin-top: 40px;
-		box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+        width: 50%;
 	}
 
 	/*cases*/
@@ -680,63 +655,73 @@ hr{
 		margin-top: -5px;
 	}
 
-	.case-img{
-		width: 100%;
-		height: auto;
-	}
+    .cases-box{
 
-	.cases-billeder{
-		display: flex;
-		justify-content: space-evenly;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-bottom: 70px;
-	}
+        .cases-billeder{
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 70px;
 
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    
 	/*kontakt skema*/
 	
-	.first-line {
-		color: #ff1e00;
-		display: flex;
-	   justify-content: left;
-	   margin-left: -100px;
-	}
-	
-	.second-line {
-		color: #333232;
-		display: flex;
-		justify-content: right;
-		margin-right: -100px;
+	.kontaktform{
+        width: 90%;
+
+        .first-line {
+        display: flex;
+        justify-content: center;
+        margin: 0 0;
 	}
 
-	form {
-		display: grid;
+        .second-line {
+        display: flex;
+        justify-content: center;
+        margin: 0 0;
+	}
+
+}
+
+	form {   
+        .container{
+        display: grid;
 		grid-template-rows: 50% 50%;
-	}
-	
-	.left{
-		grid-row-start: 1;
-	} 
-	
-	.right{
-		grid-row-start: 2;
-	}
+      
+             .left{
+                grid-row-start: 1;
+             } 
+        
+            .right{
+                grid-row-start: 2;
+             }
 
-	button{
-		width: 50%;
+    }
+}
+
+    button{
+		width: 80%;
 	}
 
 /*Footer*/
 
 footer{
 	height: auto;
+
+    img{
+        max-width: 50%;
+        height: auto;
+        margin-left: 25vw;
+    }
 }
 
-footer img{
-	max-width: 50%;
-	height: auto;
-	margin-left: 25vw;
-}
 
 .kolonner{
 	display: flex;
@@ -747,9 +732,15 @@ footer img{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: center;
+
+    p{
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.kolonne2{
+.kolonne2{ 
 	box-sizing: border-box;
 	width: 100%;
 }
@@ -762,15 +753,11 @@ footer img{
 .insta{
 	max-width: 20%;
 }
+
 .tiktok{
 	max-width: 20%;
 }
 
-.kolonne1 p{
-	box-sizing: border-box;
-	width: 100%;
-	text-align: center;
-}
 }
 
 /*ipad + op til 13 tommer computerskærm*/
@@ -787,10 +774,10 @@ footer img{
 	
 	header{
 		height: auto;
-	}
-	
-	header h1{
-		font-size: 45px;
+
+        h1{
+            font-size: 45px;
+        }
 	}
 
 	.menu-top{
@@ -821,36 +808,37 @@ footer img{
 	grid-template-columns: 50% 50%;
 	margin-left: 20px;
 	margin-right: 20px;
-  }
 
-.boks1, .boks2, .boks3, .boks4 {
-	width: 45vw;
-	height: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+    .boks1, .boks2, .boks3, .boks4 {
+        width: 45vw;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  }
 
 .service-knap{
 	margin-top: 45px;
 }
 
-	.knap-container{
-		display: none;
-	}
+.knap-container{
+    display: none;
+}
 
-	h2{
-		margin-bottom: 20px;
-		margin-top: 20px;
-		font-size: 55px;
-	}
+h2{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 55px;
+}
 
-	.knap-pris {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 40px;
-	}
+.pris-knap {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+    width: 50%;
+}
 
-	.knap-pris button {
+	.pris-knap button {
 		background-color: #ff1e00;
 		color: #fff;
 		font-family: "DM Serif Display", serif;
@@ -869,11 +857,7 @@ footer img{
 	h4{
 		margin-top: -5px;
 	}
-
-	.case-img{
-		width: 100%;
-		height: auto;
-	}
+.cases-box{
 
 	.cases-billeder{
 		display: flex;
@@ -881,8 +865,14 @@ footer img{
 		padding-left: 20px;
 		padding-right: 20px;
 		padding-bottom: 70px;
-	}
 
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+	}
+}
 /*kontakt skema*/
 	
 	.first-line {
