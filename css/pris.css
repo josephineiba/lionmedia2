@@ -533,20 +533,11 @@ hr{
 	main{
 		width: 100%;
 	}
-	
-	form {
-		display: flex;
-	}	
+		
 	
 	header{
-		height: 115vh;
+		height: 100vh;
 		width: 100vw;
-	}
-
-	h1{
-		font-size: 90px;
-		text-align: center;
-		margin-top: -20px;
 	}
 
 	.ny-p{
@@ -579,9 +570,14 @@ hr{
 		color: #fff;
 	}
 
+	.rullende-tekst{
+		display: none;
+	}
+
 nav .mainmenu{
 	width: 100vw;
 }
+
 .kolonne {
     display: grid;
 	grid-template-rows: 50% 50%;
@@ -591,8 +587,8 @@ nav .mainmenu{
 	grid-row-start: 1;
 	width: 100%;
 	text-align: center;
-
 }
+
 .kolonne aside {
 	padding: 1em;
 	grid-row-start: 2;
@@ -642,7 +638,7 @@ form{
 }
 
 .checkbox{
-	margin-left: 75px;
+	margin-left: 50px;
 }
 
 textarea{
@@ -707,10 +703,6 @@ footer img{
 	main{
 		width: 100%;
 	}
-	
-	form {
-		display: flex;
-	}	
 
 	/*Header*/
 	
@@ -743,20 +735,6 @@ footer img{
 		color: #fff;
 	}
 
-/*Footer*/
 
-footer{
-	height: auto;
-}
-
-footer img{
-	max-width: 50%;
-	height: auto;
-	margin-left: 25vw;
-}
-
-footer p{
-	font-size: 17px;
-}
 
 }

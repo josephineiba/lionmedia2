@@ -38,7 +38,7 @@ h1{
 }
 
 h2{
-  font-size: 60px;
+  font-size: 55px;
   font-family: "DM Serif Display", serif;
   color: #ff1e00;
   text-align: center;
@@ -799,6 +799,10 @@ h2{
   margin: 0;
 }
 
+.pris-knap{
+  width: 50%;
+}
+
 /*Footer*/
 
 footer{
@@ -943,22 +947,9 @@ h1{
 		font-size: 55px;
 	}
 
+  .pris-knap{
+    width: 20%;
+  }
 
-
-  /*Footer*/
-
-footer{
-	height: auto;
-}
-
-footer img{
-	max-width: 50%;
-	height: auto;
-	margin-left: 25vw;
-}
-
-footer p{
-	font-size: 17px;
-}
 
 }
