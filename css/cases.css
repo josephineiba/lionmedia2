@@ -519,6 +519,7 @@ hr{
            
      h1{
         margin-top: -20px;
+		padding-top: 100px;
     }
 
     .lionmedia{
@@ -544,6 +545,10 @@ hr{
     .fa-magnifying-glass{
         color: #fff;
     }
+
+	.rullende-tekst{
+		display: none;
+	}
     
 /* dropdown menu */
     nav .mainmenu{
@@ -572,6 +577,7 @@ hr{
 
     .p-header{
         font-size: 25px;
+		padding-top: 30px;
     }
 
 /* main indhold */
@@ -642,10 +648,10 @@ hr{
         flex-direction: column;
     }
 
-                                /* OBS! billeder skal fikses*/    
-                                .pop-up-article img{
-                                    display: none;
-                                }
+  
+    .pop-up-article img{
+        display: none;
+    }
 
 	  /* Stil for at vise pop-up vinduet, når det har et id på target attributten */
 	  #popup1:target, #popup2:target, #popup3:target {
