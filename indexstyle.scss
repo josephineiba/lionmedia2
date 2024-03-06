@@ -592,6 +592,12 @@ hr{
             margin-top: -75px;
         }
 	}
+
+    nav {
+        .mainmenu{
+        width: 100%;
+    }
+}
 	
 	.menu-top{
 		display: flex;
@@ -775,10 +781,6 @@ footer{
 	main{
 		width: 100%;
 	}
-	
-	form {
-		display: flex;
-	}	
 
 	/*Header*/
 	
@@ -845,22 +847,18 @@ h2{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 40px;
-    width: 50%;
-}
+    width: 20%;
 
-	.pris-knap button {
-		background-color: #ff1e00;
-		color: #fff;
-		font-family: "DM Serif Display", serif;
+    button {
 		padding: 0.5em 0.5em;
 		border: none;
-		border-radius: 100px;
 		width: 30%;
 		font-size: 25px;
 		cursor: pointer;
 		margin-top: 40px;
 		box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
 	}
+}
 
 /*cases*/
 
@@ -883,53 +881,6 @@ h2{
 
 	}
 }
-/*kontakt skema*/
-	
-	.first-line {
-		color: #ff1e00;
-		display: flex;
-	   justify-content: left;
-	   margin-left: -70px;
-	}
-	
-	.second-line {
-		color: #333232;
-		display: flex;
-		justify-content: right;
-		margin-right: -70px;
-	}
 
-	form {
-		display: grid;
-		grid-template-rows: 50% 50%;
-	}
-	
-	.left{
-		grid-row-start: 1;
-	} 
-	
-	.right{
-		grid-row-start: 2;
-	}
-
-	button{
-		width: 50%;
-	}
-
-/*Footer*/
-
-footer{
-	height: auto;
-}
-
-footer img{
-	max-width: 50%;
-	height: auto;
-	margin-left: 25vw;
-}
-
-footer p{
-	font-size: 17px;
-}
 
 }
